@@ -1,6 +1,14 @@
 body {
     font-family: sans-serif;
   }
+
+  :root {
+    --primary-color: rgb(11, 158, 207);
+    --secondary-color: rgb(133, 208, 233);
+    --error: rgb(241, 55, 55);
+    --warning: rgb(247, 184, 67);
+    --success: lightgreen;
+  }
   
   .button {
     padding: 0.5rem;
@@ -19,44 +27,44 @@ body {
   }
   
   .primary-button {
-    background-color: blue;
+    background-color: var(--primary-color);
   }
   
   .secondary-button {
-    background-color: lightblue;
+    background-color: var(--secondary-color);
   }
   
   .danger-button {
-    background-color: red;
+    background-color: var(--error);
   }
   
   .primary-button-outlined {
-    border: blue solid 1px;
-    color: blue;
+    border: var(--primary-color) solid 1px;
+    color: var(--primary-color);
   }
   
   .secondary-button-outlined {
-    border: lightblue solid 1px;
-    color: lightblue;
+    border: var(--secondary-color) solid 1px;
+    color: var(--secondary-color);
   }
   
   .danger-button-outlined {
-    border: red solid 1px;
-    color: red;
+    border: var(--error) solid 1px;
+    color: var(--error);
   }
   
   .primary-button-outlined:hover {
-    background-color: blue;
+    background-color: var(--primary-color);
     color: white;
   }
   
   .secondary-button-outlined:hover {
-    background-color: lightblue;
+    background-color: var(--secondary-color);
     color: white;
   }
   
   .danger-button-outlined:hover {
-    background-color: red;
+    background-color: var(--error);
     color: white;
   }
   
@@ -79,5 +87,5 @@ body {
   }
   
   .float-button:hover {
-    background-color: lightblue;
+    background-color: var(--secondary-color);
   }

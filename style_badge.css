@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #7088D2;
+}
+
+.badge-container {
+    display: flex;
+    position: relative;
+  }
+  
+  .badge {
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .margin {
+    margin-top: 3rem;
+  }
+  
+  .text {
+    font-size: 2rem;
+  }
+
+  .button {
+      font-size: 1.5rem;
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 1rem;
+      color: white;
+      padding: 0.5rem 1rem;
+  }
+
+  .icon {
+    width: 3rem;
+  }
+  
+  .badge-position-text {
+    left: 12.3rem;
+  }
+  
+  .badge-position-button{
+    left: 4.8rem;
+    top: 0.6rem;
+  }
+  
+  .badge-position-icon {
+    left: 1.7rem;
+    top: 0.8rem;
+  }
+
+  
+  

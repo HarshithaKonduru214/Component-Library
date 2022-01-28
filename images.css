@@ -3,7 +3,7 @@ body {
   }
   
 .image {
-    width: 20rem;
+    max-width: 30%;
 }
   
   .image-responsive {

@@ -1,11 +1,11 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   :root {
     --primary-color: #399283;
     --gray-text: gray;
-    --secondary-color: #ddf1eb;
+    --secondary-color: #BEDCFE;
   }
   
   .button {
@@ -15,6 +15,7 @@ body {
     background-color: white;
     border: none;
     font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     min-width: 8rem;
     max-width: 7rem;
@@ -28,15 +29,20 @@ body {
   .margin {
     margin-bottom: 1rem;
   }
+
+  .margin-right {
+    margin-right: 1rem;
+  }
   
   .primary-button {
     background-color: var(--primary-color);
   }
   
   .nav-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
     font-weight: 900;
+    align-self: center;
   }
   
   .main-title {
@@ -54,18 +60,32 @@ body {
     display: flex;
     justify-content: space-between;
   }
+
+  .primary-button-outlined {
+    border: var(--primary-color) solid 1px;
+    color: var(--primary-color);
+  }
   
+  .primary-button-outlined:hover {
+    background-color: var(--secondary-color);
+    color: #2F2F2F;
+  }
+
   .main-container {
     display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin: auto;
-    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
   }
   
   .main-image {
-    width: 80%;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container {
+    max-width: 25%;
+    align-self: center;
   }
 
   .main {
@@ -74,12 +94,13 @@ body {
   
   .main-content {
     color: var(--gray-text);
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
   
   .icon {
     min-width: 2rem;
+    margin-right: 0.5rem;
   }
   
   .nav-buttons {

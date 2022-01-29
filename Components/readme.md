@@ -1,0 +1,1 @@
+avatar and badge documentation

@@ -4,7 +4,7 @@ body {
 
   :root {
     --primary-color: rgb(11, 158, 207);
-    --secondary-color: rgb(133, 208, 233);
+    --secondary-color: #BEDCFE;
     --error: rgb(241, 55, 55);
     --warning: rgb(247, 184, 67);
     --success: lightgreen;

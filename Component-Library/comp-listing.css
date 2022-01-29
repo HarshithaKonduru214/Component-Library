@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #399283;
+    --gray-text: gray;
+    --secondary-color: #BEDCFE;
+  }
+  
+
+.sidebar {
+    position: fixed;
+}
+
+.list-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.list-item {
+    list-style-type: none;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: var(--gray-text);
+}
+
+.button {
+    background-color: white;
+    color: var(--gray-text);
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+

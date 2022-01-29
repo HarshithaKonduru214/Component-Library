@@ -1,1 +1,0 @@
-alert and button documentation

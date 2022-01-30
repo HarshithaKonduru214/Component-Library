@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="../Components/badge/badge.css">
     <link rel="stylesheet" href="../Components/button/button.css">
     <link rel="stylesheet" href="../Components/avatar/avatar.css">
-    
+    <link rel="stylesheet" href="../Components/alert/alert.css">
+
     <link rel="stylesheet" href="index.css">
-    
+
     <link rel="stylesheet" href="avatar-cb.css">
-    
+
     <link rel="stylesheet" href="badge-cb.css">
+    <link rel="stylesheet" href="alert-cb.css">
 </head>
 
 <body>
@@ -48,7 +50,7 @@
 
         <div class="main-content flex-column margin-right">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom padding-left">BADGES</div>
+                <div class="main-content-title margin-bottom padding-left">ALERTS</div>
                 <iframe class="align-center-item" src="https://carbon.now.sh/embed/ryWcuaYq9YQv3tqITf78"
                     style="width: 544px; height: 93px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
@@ -57,13 +59,23 @@
 
             <ul class="main-comp-variations margin-bottom flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badge over Text</strong></div>
+                    <div class="variation-title"><strong>Solid Alerts</strong></div>
                     <div class="variation-desc">This component is typically used to display
-                        badges over text.</div>
+                        alerts.</div>
                     <div class="variation-component align-center-item">
-                        <div class="badge-container">
-                            <p class="text">Text over badge.</p>
-                            <p class="badge badge-text badge-position-text">NEW</p>
+                        <div class="alert-container flex-column">
+                            <div class="alert alert-success">
+                                <strong>Success</strong> - This is a success alert!
+                            </div>
+                            <div class="alert alert-error">
+                                <strong>Error</strong> - This is an error alert!
+                            </div>
+                            <div class="alert alert-primary">
+                                <strong>Primary</strong> - This is a primary alert!
+                            </div>
+                            <div class="alert alert-warning">
+                                <strong>Warning</strong> - This is a warning alert!
+                            </div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
@@ -74,34 +86,26 @@
                     </div>
                 </li>
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badge over Button</strong></div>
+                    <div class="variation-title"><strong>Outlined Alerts</strong></div>
                     <div class="variation-desc">This component is used to display
-                        badges over buttons.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="badge-container">
-                            <button class="button primary-button margin-bottom">Action</button>
-                            <p class="badge badge-position-button">9</p>
-                          </div>
+                        outlined alerts.</div>
+                    <div class="alert-container flex-column">
+                        <div class="alert alert-success-outlined">
+                            <strong>Success</strong> - This is a success alert!
+                        </div>
+                        <div class="alert alert-error-outlined">
+                            <strong>Error</strong> - This is an error alert!
+                        </div>
+                        <div class="alert alert-primary-outlined">
+                            <strong>Primary</strong> - This is a primary alert!
+                        </div>
+                        <div class="alert alert-warning-outlined">
+                            <strong>Warning</strong> - This is a warning alert!
+                        </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <iframe class="margin-bottom" src="https://carbon.now.sh/embed/ilnyuAWDwBY5f212LRQ3"
                             style="width: 434px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    </div>
-                </li>
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badges over Icon</strong></div>
-                    <div class="variation-desc">This component is used to display badges over icons.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="badge-container">
-                            <img class="icon margin-bottom" src="../Components/badge/cart.svg" alt="Icon" />
-                            <p class="badge badge-position-icon">8</p>
-                          </div>
-                    </div>
-                    <div class="variation-comp-code align-center-item">
-                        <iframe class="margin-bottom" src="https://carbon.now.sh/embed/0g56RmfHqUmBKEfo4lPt"
-                            style="width: 502px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>

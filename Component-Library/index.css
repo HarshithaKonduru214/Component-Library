@@ -45,8 +45,8 @@ body {
   }
 
   .primary-button-outlined:hover {
-    background-color: var(--secondary-color);
-    color: #2F2F2F;
+    background-color: var(--primary-color);
+    color: white;
   }
 
   .main-container {

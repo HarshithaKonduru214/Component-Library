@@ -3,15 +3,31 @@
     --gray-text: gray;
     --secondary-color: #BEDCFE;
   }
-  
+
+  .margin-top {
+      margin-top: 0.5rem;
+  }
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
 
 .sidebar {
-    position: fixed;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.main-content {
+    flex-grow: 11;
 }
 
 .list-title {
-    font-size: 1.5rem;
-    font-weight: 300;
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .list-item {

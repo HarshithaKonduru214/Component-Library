@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Component Library</title>
+	<link rel="stylesheet" href="utility.css">
 	<link rel="stylesheet" href="../Components/button/button.css">
-    <link rel="stylesheet" href="index.css">
-	
+	<link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
-    <nav class="navbar margin">
-		<div class="nav-title">OXYGEN UI</div>
-		<div class="nav-buttons">
+	<nav class="navbar margin flex-row">
+		<div class="nav-title align-center-item">OXYGEN UI</div>
+		<div class="nav-buttons flex-row">
 			<a href="#" class="nav-icon button margin"><img src="github-brands.svg" /></a>
 			<a href="#" class="nav-icon button margin"><img src="twitter-brands.svg" /></a>
 			<a href="#" class="nav-icon button margin"><img src="linkedin-brands.svg" /></a>
 		</div>
 	</nav>
 
-	<main class="main-container">
-			<div class="main-title margin">You bring the passion, we bring the style.</div>
-			<div class="image-container margin">
-				<img class="main-image" src="main-image.svg" alt="home-image">
-			</div>
-			<div class="main-content margin">A lightweight and modular front-end framework for developing fast and powerful web interfaces.</div>
-			<div class="main-buttons">
-				<a href="#" class="button margin primary-button margin-right">Get Started</a>
-				<a href="#" class="button margin-right margin primary-button-outlined">Github</a>
-			</div>
+	<main class="main-container flex-column">
+		<div class="main-title margin">You bring the passion, we bring the style.</div>
+		<div class="image-container margin align-center-item">
+			<img class="main-image" src="main-image.svg" alt="home-image">
 		</div>
-			
+		<div class="main-content margin">A lightweight and modular front-end framework for developing fast and powerful
+			web interfaces.</div>
+		<div class="main-buttons flex-row">
+			<a href="#" class="button margin primary-button margin-right">Get Started</a>
+			<a href="#" class="button margin-right margin primary-button-outlined">Github</a>
+		</div>
+		</div>
 	</main>
-    
+
 </body>
+
 </html>

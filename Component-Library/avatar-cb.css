@@ -52,12 +52,3 @@ ul {
     line-height: 1.5rem;
     color: var(--gray-text);
 }
-
-.button {
-    background-color: white;
-    color: var(--gray-text);
-}
-
-.button:hover {
-    background-color: var(--secondary-color);
-}

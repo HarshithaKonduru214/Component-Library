@@ -33,8 +33,8 @@ body {
 }
 
 .secondary-button-outlined {
-  border: var(--secondary-color) solid 1px;
-  color: var(--secondary-color);
+  color: var(--gray-text);
+  background-color: white;
 }
 
 .danger-button-outlined {
@@ -49,7 +49,6 @@ body {
 
 .secondary-button-outlined:hover {
   background-color: var(--secondary-color);
-  color: white;
 }
 
 .danger-button-outlined:hover {

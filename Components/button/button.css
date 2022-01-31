@@ -11,10 +11,6 @@ body {
   --success: lightgreen;
 }
 
-.margin {
-  margin: 0.5rem;
-}
-
 .primary-button {
   background-color: var(--primary-color);
 }
@@ -59,10 +55,6 @@ body {
 .flex-align {
   justify-content: space-evenly;
   align-items: center;
-}
-
-.button-icon {
-  display: flex;
 }
 
 .float-button {

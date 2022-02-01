@@ -68,3 +68,7 @@ body {
 .float-button:hover {
   background-color: var(--secondary-color);
 }
+
+.icon {
+  width: 2rem;
+}

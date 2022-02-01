@@ -56,7 +56,7 @@
     border: none;
     font-weight: 600;
     padding: 0.5rem;
-    min-width: 7rem;
+    min-width: 100%;
     cursor: pointer;
     color: white;
 }

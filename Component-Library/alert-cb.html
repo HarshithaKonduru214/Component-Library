@@ -10,19 +10,15 @@
     <link rel="stylesheet" href="../Components/badge/badge.css">
     <link rel="stylesheet" href="../Components/button/button.css">
     <link rel="stylesheet" href="../Components/avatar/avatar.css">
-    <link rel="stylesheet" href="../Components/alert/alert.css">
-
-    <link rel="stylesheet" href="index.css">
-
     <link rel="stylesheet" href="avatar-cb.css">
-
     <link rel="stylesheet" href="badge-cb.css">
-    <link rel="stylesheet" href="alert-cb.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav class="navbar margin-bottom flex-row">
-        <div class="nav-title align-center-item">OXYGEN UI</div>
+    <nav class="navbar margin-bottom  flex-row box-shadow">
+        <div class="nav-title align-center-item padding-left">OXYGEN UI</div>
         <div class="nav-buttons flex-row">
             <a href="#" class="nav-icon button margin"><img src="github-brands.svg" /></a>
             <a href="#" class="nav-icon button margin"><img src="twitter-brands.svg" /></a>
@@ -33,7 +29,7 @@
     <div class="main flex-row">
         <div class="sidebar flex-column">
             <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="#" class="button secondary-button">Introduction</a></li>
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Introduction</a></li>
                 <li class="list-item"><a href="#" class="button secondary-button-outlined">Colors</a></li>
                 <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
             </ul>
@@ -50,78 +46,72 @@
 
         <div class="main-content flex-column margin-right">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom padding-left">ALERTS</div>
-                <iframe class="align-center-item" src="https://carbon.now.sh/embed/ryWcuaYq9YQv3tqITf78"
-                    style="width: 544px; height: 93px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <div class="main-content-title margin-bottom padding-left">BADGES</div>
+                <pre class="margin-bottom align-center-item"><code class="language-html">
+&ltlink rel="stylesheet" href="badge.css">
+                </code></pre>
             </div>
 
             <ul class="main-comp-variations margin-bottom flex-column">
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Solid Alerts</strong></div>
-                    <div class="variation-desc">This component is typically used to display
-                        alerts.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="alert-container flex-column">
-                            <div class="alert alert-success">
-                                <strong>Success</strong> - This is a success alert!
-                            </div>
-                            <div class="alert alert-error">
-                                <strong>Error</strong> - This is an error alert!
-                            </div>
-                            <div class="alert alert-primary">
-                                <strong>Primary</strong> - This is a primary alert!
-                            </div>
-                            <div class="alert alert-warning">
-                                <strong>Warning</strong> - This is a warning alert!
-                            </div>
+                <li class="comp-variations flex-column margin-bottom">
+                    <div class="variation-title"><strong>Badge over Text</strong></div>
+                    <div class="variation-desc margin-bottom">This component is typically used to display
+                        badges over text.</div>
+                    <div class="variation-component align-center-item margin-bottom">
+                        <div class="badge-container">
+                            <p class="text">Text over badge.</p>
+                            <p class="badge badge-text badge-position-text">NEW</p>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
-                        <iframe class="margin-bottom" src="https://carbon.now.sh/embed/WnV0rVZMLH01GIdTMZ1O"
-                            style="width: 426px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <pre><code class="language-html">
+&ltdiv class="badge-container">
+    &ltp class="text">Text over badge.&lt/p>
+    &ltp class="badge badge-text badge-position-text">NEW&lt/p>
+&lt/div>
+                        </code></pre>
+
                     </div>
                 </li>
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Outlined Alerts</strong></div>
-                    <div class="variation-desc">This component is used to display
-                        outlined alerts.</div>
-                    <div class="alert-container">
-		<div class="alert alert-success padding margin-bottom">
-			<strong>Success</strong> - This is a success alert!
-		</div>
-		<div class="alert alert-error padding margin-bottom">
-			<strong>Error</strong> - This is an error alert!
-		</div>
-		<div class="alert alert-primary padding margin-bottom">
-			<strong>Primary</strong> - This is a primary alert!
-		</div>
-		<div class="alert alert-warning padding margin-bottom">
-			<strong>Warning</strong> - This is a warning alert!
-		</div>
-	</div>
 
-	<div class="alert-container">
-		<div class="alert alert-success-outlined padding margin-bottom">
-			<strong>Success</strong> - This is a success alert!
-		</div>
-		<div class="alert alert-error-outlined padding margin-bottom">
-			<strong>Error</strong> - This is an error alert!
-		</div>
-		<div class="alert alert-primary-outlined padding margin-bottom">
-			<strong>Primary</strong> - This is a primary alert!
-		</div>
-		<div class="alert alert-warning-outlined padding margin-bottom">
-			<strong>Warning</strong> - This is a warning alert!
-		</div>
+                <li class="comp-variations flex-column margin-bottom">
+                    <div class="variation-title"><strong>Badge over Button</strong></div>
+                    <div class="variation-desc margin-bottom">This component is used to display
+                        badges over buttons.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="badge-container">
+                            <button class="button primary-button margin-bottom">Action</button>
+                            <p class="badge badge-position-button">9</p>
+                        </div>
+                    </div>
                     <div class="variation-comp-code align-center-item">
-                        <iframe class="margin-bottom" src="https://carbon.now.sh/embed/ilnyuAWDwBY5f212LRQ3"
-                            style="width: 434px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <pre><code class="language-html">
+&ltdiv class="badge-container">
+    &ltbutton class="button primary-button margin-bottom">Action&lt/button>
+    &ltp class="badge badge-position-button">&lt/p>
+&lt/div>   
+                        </code></pre>
+                    </div>
+                </li>
+
+                <li class="comp-variations flex-column margin-bottom">
+                    <div class="variation-title"><strong>Badges over Icon</strong></div>
+                    <div class="variation-desc margin-bottom">This component is used to display badges over icons.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="badge-container">
+                            <img class="icon margin-bottom" src="../Components/badge/cart.svg" alt="Icon" />
+                            <p class="badge badge-position-icon">8</p>
+                        </div>
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="badge-container">
+    &ltimg class="icon margin" src="cart.svg" alt="Icon" />
+    &ltp class="badge badge-position-icon">8</p>
+&lt/div>
+                        </code></pre>
+
+
                     </div>
                 </li>
             </ul>
@@ -134,6 +124,10 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 
 </html>

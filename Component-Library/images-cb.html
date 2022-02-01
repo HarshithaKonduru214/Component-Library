@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Listing</title>
+    <link rel="stylesheet" href="../Components/utility.css">
+    <link rel="stylesheet" href="../Components/button/button.css">
+    <link rel="stylesheet" href="../Components/avatar/avatar.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="avatar-cb.css">
+    <link rel="stylesheet" href="../Components/card/card.css">
+    <link rel="stylesheet" href="../Components/images/images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
+</head>
+
+<body>
+    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
+        <div class="nav-title align-center-item">OXYGEN UI</div>
+        <div class="nav-buttons flex-row">
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
+                    src="github-brands.svg" /></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
+                    src="twitter-brands.svg" /></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
+                    src="linkedin-brands.svg" /></a>
+        </div>
+    </nav>
+
+    <div class="main flex-row">
+        <div class="sidebar flex-column">
+            <ul class="list-title margin align-center-item">Getting Started
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Introduction</a>
+                </li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Colors</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
+            </ul>
+            <ul class="list-title margin align-center-item">Components
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Avatar</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Badge</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Alert</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Buttons</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Card</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Input</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Images</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content flex-column margin-right">
+            <div class="main-comp-title flex-column">
+                <div class="main-content-title margin-bottom padding-left">IMAGES</div>
+                <pre class="align-center-item margin-bottom"><code class="language-html">
+&ltlink rel="stylesheet" href="images.css.css">
+                </code></pre>
+            </div>
+
+            <ul class="main-comp-variations margin-bottom flex-column">
+                <li class="comp-variations flex-column">
+                    <div class="variation-title"><strong>Responsive Images</strong></div>
+                    <div class="variation-desc">This component is used to display any image to the 100% of the parent container keeping the aspect ratio.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="image padding">
+                            <img class="image-responsive" src="https://picsum.photos/300/200" alt="Image">
+                        </div>                    
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="image">
+    &ltimg class="image-responsive" src="https://picsum.photos/300/200" alt="Image">
+&lt/div>
+                        
+                        </code></pre>
+                    </div>
+                </li>
+                <li class="comp-variations flex-column">
+                    <div class="variation-title"><strong>Responsive round Images</strong></div>
+                    <div class="variation-desc">The component is used to display information in vertical cards with a
+                        close icon.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="image padding">
+                            <img class="image-round" src="https://picsum.photos/300/200" alt="Image">
+                        </div>
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="image">
+    &ltimg class="image-round" src="https://picsum.photos/300/200" alt="Image">
+&lt/div>
+                        </code></pre>
+                    </div>
+                </li>
+
+            </ul>
+
+            <footer class="footer-buttons flex-row margin-bottom space-between">
+                <a class="button secondary-button-outlined" href="#">
+                    << Previous</a> <a class="button secondary-button-outlined" href="#">Next >>
+                </a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+
+</body>
+
+</html>

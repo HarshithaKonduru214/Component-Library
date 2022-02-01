@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Listing</title>
     <link rel="stylesheet" href="../Components/utility.css">
-    <link rel="stylesheet" href="../Components/badge/badge.css">
     <link rel="stylesheet" href="../Components/button/button.css">
     <link rel="stylesheet" href="../Components/avatar/avatar.css">
-
     <link rel="stylesheet" href="index.css">
-
     <link rel="stylesheet" href="avatar-cb.css">
-
-    <link rel="stylesheet" href="badge-cb.css">
+    <link rel="stylesheet" href="../Components/card/card.css">
+    <link rel="stylesheet" href="../Components/images/images.css">
+    <link rel="stylesheet" href="../Components/input/input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
 </head>
 
 <body>
     <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-		<div class="nav-title align-center-item">OXYGEN UI</div>
-		<div class="nav-buttons flex-row">
-			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img src="github-brands.svg" /></a>
-			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img src="twitter-brands.svg" /></a>
-			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img src="linkedin-brands.svg" /></a>
-		</div>
-	</nav>
+        <div class="nav-title align-center-item">OXYGEN UI</div>
+        <div class="nav-buttons flex-row">
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
+                    src="github-brands.svg" /></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
+                    src="twitter-brands.svg" /></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
+                    src="linkedin-brands.svg" /></a>
+        </div>
+    </nav>
 
     <div class="main flex-row">
         <div class="sidebar flex-column">
@@ -50,85 +51,85 @@
 
         <div class="main-content flex-column margin-right">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom">BADGES</div>
+                <div class="main-content-title margin-bottom">INPUT</div>
                 <pre class="align-center-item margin-bottom"><code class="language-html">
-&ltlink rel="stylesheet" href="badge.css">
+&ltlink rel="stylesheet" href="input.css">
                 </code></pre>
             </div>
 
             <ul class="main-comp-variations margin-bottom flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badge over Text</strong></div>
-                    <div class="variation-desc">This component is typically used to display
-                        badges over text.</div>
+                    <div class="variation-title"><strong>Input Text Box</strong></div>
+                    <div class="variation-desc margin-bottom">This component is used to take text input from the user.</div>
                     <div class="variation-component align-center-item">
-                        <div class="badge-container padding">
-                            <p class="text">Text over badge.</p>
-                            <p class="badge badge-text badge-position-text">NEW</p>
+                        <div class="input">
+                            <input class="input-text" type="text" />
+                            <div class="placeholder">Name</div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="badge-container padding">
-    &ltp class="text">Text over badge.&lt/p>
-    &ltp class="badge badge-text badge-position-text">NEW&lt/p>
+&ltdiv class="input">
+    &ltinput class="input-text" type="text" />
+    &ltdiv class="placeholder">Name&lt/div>
 &lt/div>
+                        
                         </code></pre>
                     </div>
                 </li>
-
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badge over Button</strong></div>
-                    <div class="variation-desc">This component is used to display
-                        badges over buttons.</div>
+                    <div class="variation-title"><strong>Validation Text Box</strong></div>
+                    <div class="variation-desc">There are 3 validations available apart from default namely success,
+                        warning and error.</div>
                     <div class="variation-component align-center-item">
-                        <div class="badge-container padding">
-                            <button class="button primary-button margin-bottom">Action</button>
-                            <p class="badge badge-position-button">9</p>
+                        <div class="input">
+                            <input class="input-text input-success" type="text" />
+                            <div class="placeholder success">Name</div>
+                        </div>
+                        <div class="input">
+                            <input class="input-text input-error" type="text" />
+                            <div class="placeholder errror">Name</div>
+                        </div>
+                        <div class="input">
+                            <input class="input-text input-warn" type="text" />
+                            <div class="placeholder warn">Name</div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="badge-container padding">
-    &ltbutton class="button primary-button margin-bottom">Action</button>
-    &ltp class="badge badge-position-button">9</p>
-&lt/div>   
-                        </code></pre>
-                    </div>
-                </li>
-
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badges over Icon</strong></div>
-                    <div class="variation-desc">This component is used to display badges over icons.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="badge-container padding">
-                            <img class="icon margin-bottom" src="../Components/badge/cart.svg" alt="Icon" />
-                            <p class="badge badge-position-icon">8</p>
-                        </div>
-                    </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="badge-container padding">
-    &ltimg class="icon margin" src="cart.svg" alt="Icon" />
-    &ltp class="badge badge-position-icon">8</p>
+&ltdiv class="input">
+    &ltinput class="input-text input-success" type="text" />
+    &ltdiv class="placeholder success">Name&lt/div>
 &lt/div>
+&ltdiv class="input">
+    &ltinput class="input-text input-error" type="text" />
+    &ltdiv class="placeholder errror">Name&lt/div>
+&lt/div>
+&ltdiv class="input">
+    &ltinput class="input-text input-warn" type="text" />
+    &ltdiv class="placeholder warn">Name&lt/div>
+&lt/div>
+                        
                         </code></pre>
                     </div>
                 </li>
             </ul>
-
-            <footer class="footer-buttons flex-row margin-bottom">
+            <footer class="footer-buttons flex-row margin-bottom space-between">
                 <a class="button secondary-button-outlined" href="#">
                     << Previous</a> <a class="button secondary-button-outlined" href="#">Next >>
                 </a>
             </footer>
         </div>
+
+        
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
     </script>
+
 </body>
 
 </html>

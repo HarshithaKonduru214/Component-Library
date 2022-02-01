@@ -1,11 +1,3 @@
-body {
-    font-family: sans-serif;
-    background-color: whitesmoke;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-  
   .card-container {
     display: flex;
     flex-direction: column;

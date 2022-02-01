@@ -60,7 +60,7 @@
                     <div class="variation-title"><strong>Cards with badges</strong></div>
                     <div class="variation-desc">This component is used to display information in vertical cards.</div>
                     <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow">
+                        <div class="card-container box-shadow flex-column">
                             <div class="card-image margin-bottom">
                                 <img class="image" src="https://picsum.photos/320/200" alt="image" />
                             </div>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-image margin-bottom">
+&ltdiv class="card-image margin-bottom flex-column">
     &ltdiv class="card-container box-shadow">
     &ltimg class="image" src="https://picsum.photos/320/200" alt="image" />
   &lt/div>
@@ -102,7 +102,7 @@
                     <div class="variation-desc">The component is used to display information in vertical cards with a
                         close icon.</div>
                     <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow">
+                        <div class="card-container box-shadow flex-column">
                             <div class="card-image margin-bottom">
                                 <img class="image" src="https://picsum.photos/320/200" alt="image" />
                                 <img class="close-icon" src="../Components/card/close_black.svg" alt="Icon">
@@ -116,7 +116,7 @@
                                     today.
                                 </div>
                             </div>
-                            <div class="footer">
+                            <div class="footer flex-row">
                                 <button>READ</button>
                                 <button>BOOKMARK</button>
                                 <button class="img-btn">
@@ -133,7 +133,7 @@
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-container box-shadow">
+&ltdiv class="card-container box-shadow flex-column">
     &ltdiv class="card-image margin-bottom">
       &ltimg class="image" src="https://picsum.photos/320/200" alt="image" />
       &ltimg class="close-icon" src="close_black.svg" alt="Icon">
@@ -147,7 +147,7 @@
         today.
       &lt/div>
     &lt/div>
-    &ltdiv class="footer">
+    &ltdiv class="footer flex-row">
       &ltbutton>READ&lt/button>
       &ltbutton>BOOKMARK&lt/button>
       &ltbutton class="img-btn">
@@ -169,7 +169,7 @@
                     <div class="variation-desc">The component is used to display information in vertical cards with text
                         overlay.</div>
                     <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow">
+                        <div class="card-container box-shadow flex-column">
                             <div class="card-image margin-bottom">
                                 <img class="image" src="https://picsum.photos/320/200" alt="image" />
                             </div>
@@ -183,7 +183,7 @@
                                     today.
                                 </div>
                             </div>
-                            <div class="footer">
+                            <div class="footer flex-row">
                                 <button>READ</button>
                                 <button>BOOKMARK</button>
                                 <button class="img-btn">
@@ -200,7 +200,7 @@
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-container box-shadow">
+&ltdiv class="card-container box-shadow flex-column">
     &ltdiv class="card-image margin-bottom">
       &ltimg class="image" src="https://picsum.photos/320/200" alt="image" />
     &lt/div>
@@ -214,7 +214,7 @@
         today.
       &lt/div>
     &lt/div>
-    &ltdiv class="footer">
+    &ltdiv class="footer flex-row">
       &ltbutton>READ&lt/button>
       &ltbutton>BOOKMARK&lt/button>
       &ltbutton class="img-btn">
@@ -235,7 +235,7 @@
                     <div class="variation-title"><strong>Text only Cards</strong></div>
                     <div class="variation-desc">The component is used to display information in vertical cards.</div>
                     <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow">
+                        <div class="card-container box-shadow flex-column">
                             <div class="heading margin-bottom margin-top">
                                 <strong class="card-heading padding">Mountain</strong>
                             </div>
@@ -247,7 +247,7 @@
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-container box-shadow">
+&ltdiv class="card-container box-shadow flex-column">
     &ltdiv class="heading margin-bottom margin-top">
       &ltstrong class="card-heading padding">Mountain&lt/strong>
     &lt/div>
@@ -262,9 +262,9 @@
                     <div class="variation-title"><strong>Horizontal Card</strong></div>
                     <div class="variation-desc">The component is used to display information in horizontal cards.</div>
                     <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow horizontal-card">
+                        <div class="card-container box-shadow horizontal-card flex-column">
                             <div class="header flex-row margin-bottom margin-top">
-                                <div class="card-image padding-sm">
+                                <div class="card-image padding-sm align-center-item">
                                     <img class="image-no-border" src="https://picsum.photos/100/100" alt="image">
                                 </div>
                                 <div class="info padding">
@@ -273,7 +273,7 @@
                                         biggest changes today.</div>
                                 </div>
                             </div>
-                            <div class="footer">
+                            <div class="footer flex-row">
                                 <button class="btn">READ</button>
                                 <button class="btn">BOOKMARK</button>
                                 <button class="img-btn"><img
@@ -300,9 +300,15 @@
     &ltdiv class="footer">
       &ltbutton class="btn">READ&lt/button>
       &ltbutton class="btn">BOOKMARK&lt/button>
-      &ltbutton class="img-btn">&ltimg src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>&lt/button>
-      &ltbutton class="img-btn">&ltimg src="https://img.icons8.com/material-outlined/24/000000/share.png"/>&lt/button>
-      &ltbutton class="img-btn">&ltimg src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png"/>&lt/button>
+      &ltbutton class="img-btn">
+        &ltimg src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
+      &lt/button>
+      &ltbutton class="img-btn">
+        &ltimg src="https://img.icons8.com/material-outlined/24/000000/share.png"/>
+      &lt/button>
+      &ltbutton class="img-btn">
+        &ltimg src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png"/>
+      &lt/button>
     &lt/div>
 &lt/div>
                         </code></pre>
@@ -312,7 +318,7 @@
 
             </ul>
 
-            <footer class="footer flex-row margin-bottom space-between">
+            <footer class="footer-buttons flex-row margin-bottom space-between">
                 <a class="button secondary-button-outlined" href="#">
                     << Previous</a> <a class="button secondary-button-outlined" href="#">Next >>
                 </a>

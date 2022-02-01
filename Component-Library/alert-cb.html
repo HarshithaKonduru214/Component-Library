@@ -17,23 +17,24 @@
     <link rel="stylesheet" href="avatar-cb.css">
 
     <link rel="stylesheet" href="badge-cb.css">
-    <link rel="stylesheet" href="alert-cb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
 </head>
 
 <body>
-    <nav class="navbar margin-bottom flex-row">
-        <div class="nav-title align-center-item">OXYGEN UI</div>
-        <div class="nav-buttons flex-row">
-            <a href="#" class="nav-icon button margin"><img src="github-brands.svg" /></a>
-            <a href="#" class="nav-icon button margin"><img src="twitter-brands.svg" /></a>
-            <a href="#" class="nav-icon button margin"><img src="linkedin-brands.svg" /></a>
-        </div>
-    </nav>
+    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
+		<div class="nav-title align-center-item">OXYGEN UI</div>
+		<div class="nav-buttons flex-row">
+			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img src="github-brands.svg" /></a>
+			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img src="twitter-brands.svg" /></a>
+			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img src="linkedin-brands.svg" /></a>
+		</div>
+	</nav>
 
     <div class="main flex-row">
         <div class="sidebar flex-column">
             <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="#" class="button secondary-button">Introduction</a></li>
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Introduction</a>
+                </li>
                 <li class="list-item"><a href="#" class="button secondary-button-outlined">Colors</a></li>
                 <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
             </ul>
@@ -51,77 +52,89 @@
         <div class="main-content flex-column margin-right">
             <div class="main-comp-title flex-column">
                 <div class="main-content-title margin-bottom padding-left">ALERTS</div>
-                <iframe class="align-center-item" src="https://carbon.now.sh/embed/ryWcuaYq9YQv3tqITf78"
-                    style="width: 544px; height: 93px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <pre class="align-center-item margin-bottom"><code class="language-html">
+&ltlink rel="stylesheet" href="alert.css">
+                </code></pre>
             </div>
 
             <ul class="main-comp-variations margin-bottom flex-column">
                 <li class="comp-variations flex-column">
                     <div class="variation-title"><strong>Solid Alerts</strong></div>
-                    <div class="variation-desc">This component is typically used to display
-                        alerts.</div>
+                    <div class="variation-desc">This component is used to display
+                        solid alerts.</div>
                     <div class="variation-component align-center-item">
-                        <div class="alert-container flex-column">
-                            <div class="alert alert-success">
+                        <div class="alert-container">
+                            <div class="alert alert-success padding margin-bottom">
                                 <strong>Success</strong> - This is a success alert!
                             </div>
-                            <div class="alert alert-error">
+                            <div class="alert alert-error padding margin-bottom">
                                 <strong>Error</strong> - This is an error alert!
                             </div>
-                            <div class="alert alert-primary">
+                            <div class="alert alert-primary padding margin-bottom">
                                 <strong>Primary</strong> - This is a primary alert!
                             </div>
-                            <div class="alert alert-warning">
+                            <div class="alert alert-warning padding margin-bottom">
                                 <strong>Warning</strong> - This is a warning alert!
                             </div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
-                        <iframe class="margin-bottom" src="https://carbon.now.sh/embed/WnV0rVZMLH01GIdTMZ1O"
-                            style="width: 426px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="alert-container">
+    &ltdiv class="alert alert-success padding margin-bottom">
+        &ltstrong>Success&lt/strong> - This is a success alert!
+    &lt/div>
+    &ltdiv class="alert alert-error padding margin-bottom">
+        &ltstrong>Error&lt/strong> - This is an error alert!
+    &lt/div>
+    &ltdiv class="alert alert-primary padding margin-bottom">
+        &ltstrong>Primary&lt/strong> - This is a primary alert!
+    &lt/div>
+    &ltdiv class="alert alert-warning padding margin-bottom">
+        &ltstrong>Warning&lt/strong> - This is a warning alert!
+    &lt/div>
+&lt/div>
+                        </code></pre>
                     </div>
                 </li>
+
                 <li class="comp-variations flex-column">
                     <div class="variation-title"><strong>Outlined Alerts</strong></div>
                     <div class="variation-desc">This component is used to display
                         outlined alerts.</div>
-                    <div class="alert-container">
-		<div class="alert alert-success padding margin-bottom">
-			<strong>Success</strong> - This is a success alert!
-		</div>
-		<div class="alert alert-error padding margin-bottom">
-			<strong>Error</strong> - This is an error alert!
-		</div>
-		<div class="alert alert-primary padding margin-bottom">
-			<strong>Primary</strong> - This is a primary alert!
-		</div>
-		<div class="alert alert-warning padding margin-bottom">
-			<strong>Warning</strong> - This is a warning alert!
-		</div>
-	</div>
-
-	<div class="alert-container">
-		<div class="alert alert-success-outlined padding margin-bottom">
-			<strong>Success</strong> - This is a success alert!
-		</div>
-		<div class="alert alert-error-outlined padding margin-bottom">
-			<strong>Error</strong> - This is an error alert!
-		</div>
-		<div class="alert alert-primary-outlined padding margin-bottom">
-			<strong>Primary</strong> - This is a primary alert!
-		</div>
-		<div class="alert alert-warning-outlined padding margin-bottom">
-			<strong>Warning</strong> - This is a warning alert!
-		</div>
+                    <div class="variation-component align-center-item">
+                        <div class="alert-container">
+                            <div class="alert alert-success-outlined padding margin-bottom">
+                                <strong>Success</strong> - This is a success alert!
+                            </div>
+                            <div class="alert alert-error-outlined padding margin-bottom">
+                                <strong>Error</strong> - This is an error alert!
+                            </div>
+                            <div class="alert alert-primary-outlined padding margin-bottom">
+                                <strong>Primary</strong> - This is a primary alert!
+                            </div>
+                            <div class="alert alert-warning-outlined padding margin-bottom">
+                                <strong>Warning</strong> - This is a warning alert!
+                            </div>
+                        </div>
+                    </div>
                     <div class="variation-comp-code align-center-item">
-                        <iframe class="margin-bottom" src="https://carbon.now.sh/embed/ilnyuAWDwBY5f212LRQ3"
-                            style="width: 434px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="alert-container">
+    &ltdiv class="alert alert-success-outlined padding margin-bottom">
+        &ltstrong>Success&lt/strong> - This is a success alert!
+    &lt/div>
+    &ltdiv class="alert alert-error-outlined padding margin-bottom">
+        &ltstrong>Error&lt/strong> - This is an error alert!
+    &lt/div>
+    &ltdiv class="alert alert-primary-outlined padding margin-bottom">
+        &ltstrong>Primary&lt/strong> - This is a primary alert!
+    &lt/div>
+    &ltdiv class="alert alert-warning-outlined padding margin-bottom">
+        &ltstrong>Warning&lt/strong> - This is a warning alert!
+    &lt/div>
+&lt/div>
+                        </code></pre>
                     </div>
                 </li>
             </ul>
@@ -134,6 +147,10 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 
 </html>

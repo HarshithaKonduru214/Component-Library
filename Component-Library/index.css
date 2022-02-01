@@ -26,6 +26,9 @@ body {
 
 .navbar {
   justify-content: space-between;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .primary-button-outlined:hover {

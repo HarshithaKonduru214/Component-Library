@@ -84,3 +84,7 @@ pre {
 .space-between {
     justify-content: space-between;
 }
+
+.font-black {
+    color: black;
+}

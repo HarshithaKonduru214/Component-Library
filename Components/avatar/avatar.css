@@ -1,0 +1,88 @@
+.circular-avatar {
+  border-radius: 50%;
+  margin: 1rem 1rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: flex-end;
+}
+
+.rounded-avatar {
+  border-radius: 0.5rem;
+  margin: 1rem 1rem;
+}
+
+.avatar>div {
+  position: relative;
+  max-height: 200px;
+}
+
+.avatar-xl {
+  max-width: 5rem;
+}
+
+.avatar-large {
+  max-width: 4rem;
+}
+
+.avatar-md {
+  max-width: 3rem;
+}
+
+.avatar-small {
+  max-width: 2rem;
+}
+
+.avatar-xs {
+  max-width: 1.5rem;
+}
+
+.status-position-xl {
+  padding: 6px;
+  bottom: 1.7rem;
+  left: 4.6rem;
+}
+
+.status-position-large {
+  padding: 5.5px;
+  bottom: 1.6rem;
+  left: 3.8rem;
+}
+
+.status-position-md {
+  padding: 5px;
+  bottom: 1.4rem;
+  left: 3.1rem;
+}
+
+.status-position-small {
+  padding: 4.4px;
+  bottom: 1.2em;
+  left: 2.3rem;
+}
+
+.status-position-xs {
+  padding: 3.4px;
+  bottom: 1.5rem;
+  left: 2rem;
+}
+
+.avatar-status {
+  position: absolute;
+  display: inline-block;
+  border: white solid 2px;
+  border-radius: 50%;
+}
+
+.status-online {
+  background-color: green;
+}
+
+.status-offline {
+  background-color: gray;
+}
+
+.status-busy {
+  background-color: red;
+}

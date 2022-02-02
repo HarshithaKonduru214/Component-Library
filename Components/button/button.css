@@ -1,91 +1,74 @@
 body {
-    font-family: sans-serif;
-  }
+  font-family: sans-serif;
+}
 
-  :root {
-    --primary-color: rgb(11, 158, 207);
-    --secondary-color: rgb(133, 208, 233);
-    --error: rgb(241, 55, 55);
-    --warning: rgb(247, 184, 67);
-    --success: lightgreen;
-  }
-  
-  .button {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    color: white;
-    background-color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    min-width: 7rem;
-  }
-  
-  .margin {
-    margin: 0.5rem;
-  }
-  
-  .primary-button {
-    background-color: var(--primary-color);
-  }
-  
-  .secondary-button {
-    background-color: var(--secondary-color);
-  }
-  
-  .danger-button {
-    background-color: var(--error);
-  }
-  
-  .primary-button-outlined {
-    border: var(--primary-color) solid 1px;
-    color: var(--primary-color);
-  }
-  
-  .secondary-button-outlined {
-    border: var(--secondary-color) solid 1px;
-    color: var(--secondary-color);
-  }
-  
-  .danger-button-outlined {
-    border: var(--error) solid 1px;
-    color: var(--error);
-  }
-  
-  .primary-button-outlined:hover {
-    background-color: var(--primary-color);
-    color: white;
-  }
-  
-  .secondary-button-outlined:hover {
-    background-color: var(--secondary-color);
-    color: white;
-  }
-  
-  .danger-button-outlined:hover {
-    background-color: var(--error);
-    color: white;
-  }
-  
-  .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .button-icon {
-    display: flex;
-  }
-  
-  .float-button {
-    border-radius: 50%;
-    border: none;
-    padding: 0.7rem;
-    cursor: pointer;
-  }
-  
-  .float-button:hover {
-    background-color: var(--secondary-color);
-  }
+:root {
+  --primary-color: #399283;
+  --gray-text: gray;
+  --secondary-color: #BEDCFE;
+  --error: rgb(241, 55, 55);
+  --warning: rgb(247, 184, 67);
+  --success: lightgreen;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-button {
+  background-color: var(--secondary-color);
+}
+
+.danger-button {
+  background-color: var(--error);
+}
+
+.primary-button-outlined {
+  border: var(--primary-color) solid 1px;
+  color: var(--primary-color);
+}
+
+.secondary-button-outlined {
+  color: var(--gray-text);
+  background-color: white;
+}
+
+.danger-button-outlined {
+  border: var(--error) solid 1px;
+  color: var(--error);
+}
+
+.primary-button-outlined:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-button-outlined:hover {
+  background-color: var(--secondary-color);
+}
+
+.danger-button-outlined:hover {
+  background-color: var(--error);
+  color: white;
+}
+
+.flex-align {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.float-button {
+  border-radius: 50%;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.float-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.icon {
+  width: 2rem;
+}

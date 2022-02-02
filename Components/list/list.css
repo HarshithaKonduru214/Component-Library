@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(11, 158, 207);
+    --secondary-color: rgb(133, 208, 233);
+}
+
+.list-heading {
+    line-height: 1.5rem;
+    color: #1e293b;
+}
+
+.list-item {
+    cursor: pointer;
+}
+
+.list-item:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+li {
+    max-width: 20rem;
+    list-style: none;
+}

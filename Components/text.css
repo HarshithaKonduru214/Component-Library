@@ -29,3 +29,7 @@
 .centered-text {
     text-align: center;
 }
+
+body {
+    max-width: max-content;
+}

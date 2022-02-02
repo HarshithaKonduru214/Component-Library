@@ -80,3 +80,7 @@ pre {
 .font-black {
     color: black;
 }
+
+.gray-text {
+    color: var(--gray-text);
+}

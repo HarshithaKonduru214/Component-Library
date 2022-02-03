@@ -30,4 +30,8 @@
     .variation-title {
         margin-bottom: 1rem;
     }
+
+    .horizontal-card {
+        width: 100%;
+    }
 }

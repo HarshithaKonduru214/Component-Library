@@ -33,5 +33,6 @@
 
     .horizontal-card {
         width: 100%;
+        padding-right: 0.5rem;
     }
 }

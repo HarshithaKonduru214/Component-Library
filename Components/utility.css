@@ -84,3 +84,7 @@ pre {
 .gray-text {
     color: var(--gray-text);
 }
+
+.container {
+    max-width: 100%;
+}

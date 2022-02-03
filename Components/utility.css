@@ -81,10 +81,6 @@ pre {
     color: black;
 }
 
-.list-item > a :active {
-    color: black;
-}
-
 .gray-text {
     color: var(--gray-text);
 }

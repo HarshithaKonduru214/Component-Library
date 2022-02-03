@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #399283;
+    --gray-text: gray;
+    --secondary-color: #BEDCFE;
+    --black-text: black;
+    --error: #F13737;
+    --warning: #f59e0b;
+    --success: lightgreen;
+}
+
+.color-palette {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.block {
+    padding: 0.5rem 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.default-color {
+    background-color: var(--black-text);
+}
+
+.gray-color {
+    background-color: var(--gray-text);
+}
+
+.success-color {
+    background-color: var(--success);
+}
+
+.error-color {
+    background-color: var(--error);
+}
+
+.warning-color {
+    background-color: var(--warning);
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Component</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
+		<div class="nav-title align-center-item padding-left">OXYGEN UI</div>
+		<div class="nav-buttons flex-row">
+			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img src="/Component-Library/images/github-brands.svg" /></a>
+			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img src="/Component-Library/images/twitter-brands.svg" /></a>
+			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img src="/Component-Library/images/linkedin-brands.svg" /></a>
+		</div>
+	</nav>
+
+    <div class="main flex-row">
+        <div class="sidebar flex-column">
+            <ul class="list-title margin align-center-item">Getting Started
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Introduction</a>
+                </li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Colors</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
+            </ul>
+            <ul class="list-title margin align-center-item">Components
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Avatar</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Badge</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Alert</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Buttons</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Card</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Input</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Images</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content flex-column margin-right">
+            <div class="main-comp-title flex-column">
+                <div class="main-content-title margin-bottom">INPUT</div>
+                <pre class="align-center-item margin-bottom"><code class="language-html">
+&ltlink rel="stylesheet" href="input.css">
+                </code></pre>
+            </div>
+
+            <ul class="main-comp-variations margin-bottom flex-column">
+                <li class="comp-variations flex-column">
+                    <div class="variation-title"><strong>Input Text Box</strong></div>
+                    <div class="variation-desc margin-bottom">This component is used to take text input from the user.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="input">
+                            <input class="input-text" type="text" />
+                            <div class="placeholder">Name</div>
+                        </div>
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="input">
+    &ltinput class="input-text" type="text" />
+    &ltdiv class="placeholder">Name&lt/div>
+&lt/div>
+                        
+                        </code></pre>
+                    </div>
+                </li>
+                <li class="comp-variations flex-column">
+                    <div class="variation-title"><strong>Validation Text Box</strong></div>
+                    <div class="variation-desc">There are 3 validations available apart from default namely success,
+                        warning and error.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="input">
+                            <input class="input-text input-success" type="text" />
+                            <div class="placeholder success">Name</div>
+                        </div>
+                        <div class="input">
+                            <input class="input-text input-error" type="text" />
+                            <div class="placeholder errror">Name</div>
+                        </div>
+                        <div class="input">
+                            <input class="input-text input-warn" type="text" />
+                            <div class="placeholder warn">Name</div>
+                        </div>
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="input">
+    &ltinput class="input-text input-success" type="text" />
+    &ltdiv class="placeholder success">Name&lt/div>
+&lt/div>
+&ltdiv class="input">
+    &ltinput class="input-text input-error" type="text" />
+    &ltdiv class="placeholder errror">Name&lt/div>
+&lt/div>
+&ltdiv class="input">
+    &ltinput class="input-text input-warn" type="text" />
+    &ltdiv class="placeholder warn">Name&lt/div>
+&lt/div>
+                        
+                        </code></pre>
+                    </div>
+                </li>
+            </ul>
+            <footer class="footer-buttons flex-row margin-bottom space-between">
+                <a class="button secondary-button-outlined" href="#">
+                    << Previous</a> <a class="button secondary-button-outlined" href="#">Next >>
+                </a>
+            </footer>
+        </div>
+
+        
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+
+</body>
+
+</html>

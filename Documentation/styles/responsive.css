@@ -1,0 +1,23 @@
+@media screen and (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin: 1rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .nav-icon {
+        min-width: 0.8rem;
+        margin-right: 0.1rem;
+        background-color: white;
+    }
+
+    .nav-title {
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        font-weight: 900;
+    }
+}

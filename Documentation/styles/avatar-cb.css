@@ -52,3 +52,19 @@ ul {
     line-height: 1.5rem;
     color: var(--gray-text);
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+        background-color: aqua;
+    }
+
+    .sidebar {
+        flex: 0 1 auto;
+    }
+
+    .main-content {
+        flex: 3 0 auto;
+    }
+    
+}

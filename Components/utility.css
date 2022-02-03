@@ -81,7 +81,7 @@ pre {
     color: black;
 }
 
-.sidebar > a :active {
+.list-item > a :active {
     color: black;
 }
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Listing</title>
+    <link rel="stylesheet" href="/style.css">
+
+<body>
+    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
+		<div class="nav-title align-center-item">OXYGEN UI</div>
+		<div class="nav-buttons flex-row">
+			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img src="/Documentation/images/github-brands.svg" alt="icon"/></a>
+			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img src="/Documentation/images/twitter-brands.svg" alt="icon"/></a>
+			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img src="/Documentation/images/linkedin-brands.svg" alt="icon"/></a>
+		</div>
+	</nav>
+
+    <div class="main flex-row">
+        <div class="sidebar flex-column">
+            <ul class="list-title margin align-center-item">Getting Started
+                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Introduction</a>
+                </li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Colors</a></li>
+                <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
+            </ul>
+            <ul class="list-title margin align-center-item">Components
+                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button secondary-button-outlined">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button secondary-button-outlined">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content flex-column margin-right">
+            <div class="main-comp-title flex-column">
+                <div class="main-content-title margin-bottom">LISTS</div>
+                <pre class="align-center-item margin-bottom"><code class="language-html">
+&ltlink rel="stylesheet" href="list.css">
+                </code></pre>
+            </div>
+
+            <ul class="main-comp-variations margin-bottom flex-column">
+                <li class="comp-variations flex-column">
+                    <div class="variation-title"><strong>Spaced Lists</strong></div>
+                    <div class="variation-desc margin-bottom">This component is typically used to display
+                        information in normal lists.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="spaced-lists margin-bottom box-shadow padding">
+                            <ul class="list-heading">Simple lists
+                                <li class="list-item gray-text">Perfumes(EDT/EDP)</li>
+                                <li class="list-item gray-text">Body Mists / Sprays</li>
+                                <li class="list-item gray-text">Deodorants / Roll-Ons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="spaced-lists margin-bottom">
+    &ltul class="list-heading">Simple lists
+        &ltli class="list-item gray-text">Perfumes(EDT/EDP)&lt/li>
+        &ltli class="list-item gray-text">Body Mists / Sprays&lt/li>
+        &ltli class="list-item gray-text">Deodorants / Roll-Ons&lt/li>
+    &lt/ul>
+&lt/div> 
+                        </code></pre>            
+                    </div>
+                </li>
+
+                <li class="comp-variations flex-column">
+                    <div class="variation-title"><strong>Stacked Lists</strong></div>
+                    <div class="variation-desc margin-bottom">This component is used to display
+                        information in the form of stacked lists that is typically used in notifications.</div>
+                    <div class="variation-component align-center-item">
+                        <div class="stacked-lists container">
+                            <ul class="list-heading margin">Stacked list
+                                <li class="list-item-heading box-shadow padding margin">WOMENS FRAGRANCES
+                                    <div class="list-item-stacked">
+                                        <div class="list-item gray-text">Perfumes(EDT/EDP)</div>
+                                        <div class="list-item gray-text">Body Mists</div>
+                                        <div class="list-item gray-text">Deodorants / Roll-Ons</div>
+                                    </div>
+                                </li>
+                    
+                                <li class="list-item-heading box-shadow padding margin">MENS FRAGRANCES
+                                    <div class="list-item-stacked">
+                                        <div class="list-item gray-text">Perfumes(EDT/EDP)</div>
+                                        <div class="list-item gray-text">Body Mists</div>
+                                        <div class="list-item gray-text">Deodorants / Roll-Ons</div>
+                                        <div class="list-item gray-text">Colognes / After Shaves</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="variation-comp-code align-center-item">
+                        <pre class="margin-bottom"><code class="language-html">
+&ltdiv class="stacked-lists container">
+    &ltul class="list-heading margin">Stacked list
+        &ltli class="list-item-heading box-shadow padding margin">WOMENS FRAGRANCES
+            &ltdiv class="list-item-stacked">
+                &ltdiv class="list-item gray-text">Perfumes(EDT/EDP)&lt/div>
+                &ltdiv class="list-item gray-text">Body Mists&lt/div>
+                &ltdiv class="list-item gray-text">Deodorants / Roll-Ons&lt/div>
+            &lt/div>
+        &lt/li>
+        &ltli class="list-item-heading box-shadow padding margin">MENS FRAGRANCES
+            &ltdiv class="list-item-stacked">
+                &ltdiv class="list-item gray-text">Perfumes(EDT/EDP)&lt/div>
+                &ltdiv class="list-item gray-text">Body Mists&lt/div>
+                &ltdiv class="list-item gray-text">Deodorants / Roll-Ons&lt/div>
+                &ltdiv class="list-item gray-text">Colognes / After Shaves&lt/div>
+            &lt/div>
+        &lt/li>
+    &lt/ul>
+&lt/div>
+                        </code></pre>
+                    </div>
+                </li>
+            </ul>
+
+            <footer class="footer-buttons flex-row margin-bottom">
+                <a class="button secondary-button-outlined" href="#">
+                    << Previous</a> <a class="button secondary-button-outlined" href="#">Next >>
+                </a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

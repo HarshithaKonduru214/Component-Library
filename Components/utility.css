@@ -81,6 +81,10 @@ pre {
     color: black;
 }
 
+.sidebar > a :active {
+    color: black;
+}
+
 .gray-text {
     color: var(--gray-text);
 }

@@ -26,4 +26,8 @@
         color: var(--primary-color);
         font-weight: 600;
     }
+
+    .variation-title {
+        margin-bottom: 1rem;
+    }
 }

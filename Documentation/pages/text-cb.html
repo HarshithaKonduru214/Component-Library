@@ -11,40 +11,54 @@
 <body>
     <nav class="navbar margin-bottom padding-top flex-row box-shadow">
         <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
-        <div class="nav-buttons flex-row">
-            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
-        </div>
+            <div class="nav-buttons flex-row">
+                <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
+                        src="/Documentation/images/github-brands.svg" alt="icon" /></a>
+                <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
+                        src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
+                <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
+                        src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
+            </div>
     </nav>
 
     <div class="main flex-row">
         <div class="sidebar flex-column">
             <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
+                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html"
+                        class="button secondary-button-outlined">Introduction</a>
                 </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
+                <li class="list-item"><a href="/Documentation/pages/colors-cb.html"
+                        class="button secondary-button-outlined">Colors</a></li>
                 <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
             </ul>
             <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
-                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
-                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
-                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
-                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button secondary-button-outlined">Card</a></li>
-                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
-                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button secondary-button-outlined">Images</a></li>
-                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
-                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
+                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html"
+                        class="button secondary-button-outlined">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html"
+                        class="button secondary-button-outlined">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html"
+                        class="button secondary-button-outlined">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html"
+                        class="button secondary-button-outlined">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html"
+                        class="button secondary-button-outlined">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html"
+                        class="button secondary-button-outlined">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html"
+                        class="button secondary-button-outlined">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html"
+                        class="button secondary-button-outlined">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html"
+                        class="button secondary-button-outlined">Navigation Bar</a></li>
             </ul>
         </div>
 
         <div class="main-content flex-column margin-right">
             <div class="main-comp-title flex-column">
                 <div class="main-content-title margin-bottom">TYPOGRAPHY</div>
+                <div class="main-content-desc margin-bottom">Typography is the style or appearance of text. It can also refer to the
+                    art of working with text something you probably do all the time. To import the entire component into
+                    your project import the below stylesheet into your project.<br>Default font family: "Arial"</div>
                 <pre class="align-center-item margin-bottom"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/text/text.css");
                 </code></pre>
@@ -53,8 +67,10 @@
             <ul class="main-comp-variations margin-bottom flex-column">
                 <li class="comp-variations flex-column">
                     <div class="variation-title"><strong>Headings</strong></div>
-                    <div class="variation-desc margin-bottom">This component is typically used to display
-                        headings of various sizes. There are 6 sizes available.</div>
+                    <div class="variation-desc margin-bottom">Oxygen UI provides 6 levels of headings which can be used
+                        for the titles or sub-titles. Use the classname <code>h1</code> (3.5rem), <code>h2</code>
+                        (3rem), <code>h3</code> (2.5rem), <code>h4</code> (2rem), <code>h5</code> (1.5rem) and
+                        <code>h6</code> (1rem).</div>
                     <div class="variation-component align-center-item margin-bottom">
                         <div class="text-heading box-shadow padding">
                             <h1 class="h1 padding">Component</h1>
@@ -63,7 +79,7 @@
                             <h4 class="h4 padding">Component</h4>
                             <h5 class="h5 padding">Component</h5>
                             <h6 class="h6 padding">Component</h6>
-                        </div>                    
+                        </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
                         <pre class="margin-bottom"><code class="language-html">
@@ -75,14 +91,15 @@
     &lth5 class="h5">Component Library&lt/h5>
     &lth6 class="h6">Component Library&lt/h6>
 &lt/div>                
-                        </code></pre>            
+                        </code></pre>
                     </div>
                 </li>
 
                 <li class="comp-variations flex-column">
                     <div class="variation-title"><strong>Gray Text</strong></div>
-                    <div class="variation-desc margin-bottom">This component is used to display
-                        information in gray.</div>
+                    <div class="variation-desc margin-bottom">This is used to display
+                        the information in gray. Use the classname <code>gray-text</code> to get your text in gray.
+                    </div>
                     <div class="variation-component margin-bottom">
                         <div class="gray-text box-shadow padding">
                             <p class="text">Component Library</p>
@@ -99,7 +116,9 @@
 
                 <li class="comp-variations flex-column">
                     <div class="variation-title"><strong>Centered Text</strong></div>
-                    <div class="variation-desc margin-bottom">This component is used to display information at the center of the container.</div>
+                    <div class="variation-desc margin-bottom">This is used to display the information at the
+                        center of the container. Use the classname <code>centered-text</code> to get your text aligned
+                        to the center of the container.</div>
                     <div class="variation-component box-shadow margin-bottom">
                         <div class="centered-text padding">
                             <p class="text">Component Library</p>
@@ -117,7 +136,8 @@
 
             <footer class="footer-buttons flex-row margin-bottom">
                 <a class="button secondary-button-outlined" href="/Documentation/pages/colors-cb.html">
-                    << Colors</a> <a class="button secondary-button-outlined" href="/Documentation/pages/avatar-cb.html">Avatar >>
+                    << Colors</a> <a class="button secondary-button-outlined"
+                        href="/Documentation/pages/avatar-cb.html">Avatar >>
                 </a>
             </footer>
         </div>

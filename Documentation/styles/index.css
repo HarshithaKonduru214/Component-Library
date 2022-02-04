@@ -59,7 +59,7 @@ body {
 .min-height {
   height: min-content;
   justify-content: center;
-  width: max-content;
+  width: fit-content;
 }
 
 .nav-icon {
@@ -71,6 +71,10 @@ body {
 a {
   display: flex;
   text-decoration: none;
+}
+
+.main-buttons > a {
+  justify-content: center;
 }
 
 .nav-icon:hover {

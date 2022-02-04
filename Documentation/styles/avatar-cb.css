@@ -46,6 +46,7 @@ ul {
     flex: 1 0 auto;
     overflow: scroll;
     height: 100vh;
+    text-transform: uppercase;
 }
 
 .list-title {

@@ -59,6 +59,8 @@
     padding: 0.5rem 0.75rem;
     min-width: 7rem;
     cursor: pointer;
+    align-content: left;
+
 }
 
 pre {

@@ -5,6 +5,10 @@
     --font-black: #011627;
 }
 
+::-webkit-scrollbar{
+    width:2px;
+}
+
 .main {
     gap: 5rem;
 }
@@ -32,12 +36,16 @@ ul {
 .main-content {
     flex: 2 0 auto;
     width: 70%;
+    overflow: scroll;
+    height: 100vh;
 }
 
 .sidebar {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
     flex: 1 0 auto;
+    overflow: scroll;
+    height: 100vh;
 }
 
 .list-title {

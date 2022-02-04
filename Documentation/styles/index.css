@@ -56,6 +56,12 @@ body {
   line-height: 2rem;
 }
 
+.min-height {
+  height: min-content;
+  justify-content: center;
+  width: max-content;
+}
+
 .nav-icon {
   min-width: 2rem;
   margin-right: 0.5rem;

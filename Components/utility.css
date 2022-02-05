@@ -66,8 +66,8 @@
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    text-align: justify;
-    max-width: max-content;
+    /* text-align: justify; */
+    width: 100%;
 }
 
 .box-shadow {
@@ -88,7 +88,7 @@ pre {
 }
 
 .container {
-    max-width: 100%;
+    width: 100%;
 }
 
 code {

@@ -1,11 +1,7 @@
-:root {
-    --primary-color: rgb(11, 158, 207);
-    --secondary-color: rgb(133, 208, 233);
-}
+@import url("/Components/color-palette.css");
 
 .list-heading {
     line-height: 1.5rem;
-    color: #1e293b;
 }
 
 .list-item {

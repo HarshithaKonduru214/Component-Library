@@ -1,5 +1,4 @@
-/* @import url("/Components/utility.css"); */
-@import url("https://utility-component.netlify.app/utility.css");
+@import url("/Components/utility.css");
 @import url("/Components/text/text.css");
 @import url("/Components/alert/alert.css");
 @import url("/Components/avatar/avatar.css");

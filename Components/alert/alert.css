@@ -6,6 +6,9 @@
   --warning: #fb923c;
   --success: #4ade80;
   --white-text: #fff;
+  --status-online: green;
+  --status-busy: red;
+  --status-offline: gray;
 }
 
 body {

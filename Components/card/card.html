@@ -1,115 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
-    <link rel="stylesheet" href="/Components/utility.css">
-    <link rel="stylesheet" href="/Components/card/card.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
+  <link rel="stylesheet" href="/Components/card/card.css">
+  <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="card-container box-shadow flex-column">
-	    <div class="card-image margin-bottom">
-        <img class="image" src="https://picsum.photos/320/200" alt="image" />
+
+  <div class="card-container box-shadow flex-column mb-2">
+    <div class="card-image-container">
+      <img class="card-image" src="https://pulse-fragrances.netlify.app/images/perfume.jpg" alt="image" />
+    </div>
+    <div class="card-content-container flex-column">
+      <div class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette</div>
+      <div class="card-price flex-row">
+        <div class="price-currency mr-1">MRP: </div>
+        <div class="price-value mr-1"><strike>₹4600</strike></div>
+        <div class="price-dis-value">₹4140</div>
       </div>
-      <div class="heading margin-bottom">
-        <strong class="card-heading padding">Mountain</strong>
+      <div class="card-rating flex-row">
+        <div class="card-rating-value">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="card-rating-desc ml-2"> ( 4.6 ) </div>
       </div>
-      <div class="card-content margin-bottom padding">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </div>
-      <div class="card-badges">
-        <span class="badge margin-bottom">#Photography</span>
-        <span class="badge margin-bottom">#Travel</span>
+      <div class="card-button flex-row container">
+        <button class="button card-wishlist align-self-center"><i class="far fa-heart mr-1"></i></button>
+        <button class="button card-cart align-self-center">Add To Cart</button>
       </div>
     </div>
-  
-  <div class="card-container box-shadow flex-column">
-    <div class="card-image margin-bottom">
-      <img class="image" src="https://picsum.photos/320/200" alt="image" />
-      <img class="close-icon" src="close_black.svg" alt="Icon">
+    <div class="card-badge">10% OFF</div>
+  </div>
+
+  <div class="card-container box-shadow flex-column mb-2">
+    <div class="card-image-container mb-2">
+      <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
+    </div>
+    <div class="card-heading mb-2 ml-2">Mountain</div>
+    <div class="card-content mb-2 p-2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s.
+    </div>
+    <div class="card-badges flex-row justify-content-even">
+      <span class="badge mb-2">#Photography</span>
+      <span class="badge mb-2">#Travel</span>
+      <span class="badge mb-2">#Nature</span>
+    </div>
+  </div>
+
+  <div class="card-container box-shadow flex-column mb-2">
+    <div class="card-image-container mb-2">
+      <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
+      <i class="close-icon fas fa-times"></i>
     </div>
 
-    <div class="card-content-container margin-bottom padding-sm">
-      <div class="heading margin-bottom-sm"><strong>Changing Planet</strong></div>
-      <div class="sub-heading margin-bottom">By Kurt Wagnar</div>
+    <div class="card-content-container mb-2 m-2 ml-2">
+      <div class="card-heading mb-1"><strong>Changing Planet</strong></div>
+      <div class="sub-heading mb-2">By Kurt Wagnar</div>
       <div class="card-content">
         Visit 10 places on our planet that are undergoing the biggest changes
         today.
       </div>
     </div>
     <div class="footer flex-row">
-      <button class="secondary-button-outlined">READ</button>
-      <button class="secondary-button-outlined">BOOKMARK</button>
-      <button class="secondary-button-outlined img-btn">
-        <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
+      <button class="button">READ</button>
+      <button class="button">BOOKMARK</button>
+      <button class="button img-btn">
+        <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
       </button>
-      <button class="secondary-button-outlined img-btn">
-        <img src="https://img.icons8.com/material-outlined/24/000000/share.png"/>
+      <button class="button img-btn">
+        <img src="https://img.icons8.com/material-outlined/24/000000/share.png" />
       </button>
-      <button class="secondary-button-outlined img-btn">
+      <button class="button img-btn">
         <img src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" />
       </button>
     </div>
   </div>
 
-  <div class="card-container box-shadow flex-column">
-    <div class="card-image margin-bottom">
-      <img class="image" src="https://picsum.photos/320/200" alt="image" />
+  <div class="card-container box-shadow flex-column mb-2">
+    <div class="card-image-container mb-2">
+      <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
     </div>
-    <div class="card-content-container padding-sm">
-      <div class="info-heading margin-bottom">
-        <div class="heading"><strong>Our Changing Planet</strong></div>
+    <div class="card-content-container p-2">
+      <div class="heading-container mb-2">
+        <div class="card-heading">Our Changing Planet</div>
         <div class="sub-heading">By Kurt Wagnar</div>
       </div>
-      <div class="card-content margin-bottom">
+      <div class="card-content mb-2">
         Visit 10 places on our planet that are undergoing the biggest changes
         today.
       </div>
     </div>
     <div class="footer flex-row">
-      <button class="secondary-button-outlined">READ</button>
-      <button class="secondary-button-outlined">BOOKMARK</button>
-      <button class="secondary-button-outlined img-btn">
+      <button class="button">READ</button>
+      <button class="button">BOOKMARK</button>
+      <button class="button img-btn">
         <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
       </button>
-      <button class="secondary-button-outlined img-btn">
+      <button class="button img-btn">
         <img src="https://img.icons8.com/material-outlined/24/000000/share.png" />
       </button>
-      <button class="secondary-button-outlined img-btn">
+      <button class="button img-btn">
         <img src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" />
       </button>
     </div>
   </div>
 
-  <div class="card-container box-shadow flex-column">
-    <div class="heading margin-bottom margin-top">
-      <strong class="card-heading padding">Mountain</strong>
+  <div class="card-container box-shadow flex-column mb-2">
+    <div class="card-heading-container mb-2 mt-2">
+      <div class="card-heading p-2">Mountain</div>
     </div>
-    <div class="card-content margin-bottom padding">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    <div class="card-content mb-2 p-2">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s.
     </div>
   </div>
 
-  <div class="card-container box-shadow horizontal-card flex-column">
-    <div class="header flex-row margin-bottom margin-top">
-      <div class="card-image padding-sm">
-        <img class="image-no-border" src="https://picsum.photos/100/100" alt="image">
-      </div>
-      <div class="info padding">
-        <div class="heading margin-bottom-sm"><strong>Our Changing Planet</strong></div>
-        <div class="card-content">Visit 10 places on our planet that are undergoing the biggest changes today.</div>
-      </div>
+  <div class="card-container box-shadow horizontal-card">
+    <div class="card-header flex-row mb-2 mt-2">
+        <div class="card-image-container p-1">
+            <img class="card-image image-no-border" src="https://pulse-fragrances.netlify.app/images/perfume.jpg" alt="image">
+        </div>
+        <div class="card-content-container p-2 flex-column justify-content-between">
+            <div class="card-heading-container">
+                <div class="card-heading">Versace Pour Homme Eau De Toilette(100ml)
+                </div>
+                <div class="card-content justify-content-between">
+                    <div class="card-rating flex-row gap">
+                        <div class="card-rating-value">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="card-rating-number">4.3 / 5</div>
+                    </div>    
+                </div>
+            </div>
+            
+            <div class="card-footer flex-row justify-content-between">
+                <div class="card-qty flex-row">
+                    <div class="card-qty-content align-self-center">Quantity: 1</div>
+                    <div class="card-qty-icon align-self-center"><i class="fas fa-angle-down"></i></div>
+                </div>
+                <div class="button card-wishlish secondary-button">MOVE TO WISHLIST</div>
+            </div>
+        </div>    
     </div>
-    <div class="footer flex-row">
-      <button class="secondary-button-outlined">READ</button>
-      <button class="secondary-button-outlined">BOOKMARK</button>
-      <button class="secondary-button-outlined img-btn"><img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/></button>
-      <button class="secondary-button-outlined img-btn"><img src="https://img.icons8.com/material-outlined/24/000000/share.png"/></button>
-      <button class="secondary-button-outlined img-btn"><img src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png"/></button>
-    </div>
-  </div> 
-    
+    <button class="card-close"><i class="fas fa-times-circle"></i></button>
+</div>
+
 </body>
+
 </html>

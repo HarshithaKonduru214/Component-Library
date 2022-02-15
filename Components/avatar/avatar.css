@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
 
 :root {
-  --primary-color: #6ee7b7  ;
+  --primary-color: #6ee7b7;
+  --secondary-color: #BBB5BD;
   --error: #dc2626;
   --warning: #fb923c;
   --success: #4ade80;

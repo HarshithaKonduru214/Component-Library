@@ -18,7 +18,7 @@ body {
 }
 
 .card-container {
-  width: 20rem;
+  width: 25%;
   background-color: white;
   border-radius: 0.5rem;
   position: relative;
@@ -33,7 +33,7 @@ body {
 }
 
 .horizontal-card {
-  width: 25rem;
+  width: fit-content;
 }
 
 .card-heading {

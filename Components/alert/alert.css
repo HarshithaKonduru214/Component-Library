@@ -10,15 +10,12 @@ body {
   align-items: center;
 }
 
-.alert-info {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
 .alert {
   border: solid 1px;
   color: var(--white-text);
   border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .alert-success {

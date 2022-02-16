@@ -1,12 +1,5 @@
-:root {
-    --primary-color: #399283;
-    --gray-text: gray;
-    --secondary-color: #BEDCFE;
-    --font-black: #011627;
-}
-
-::-webkit-scrollbar{
-    width:2px;
+::-webkit-scrollbar {
+    width: 2px;
 }
 
 .main {
@@ -14,23 +7,12 @@
 }
 
 .main-content-title {
-    color: var(--font-black);
     font-size: 2rem;
     font-weight: 600;
 }
 
 .variation-title {
-    color: var(--font-black);
     font-size: 1.5rem;
-
-}
-
-.footer-buttons {
-    justify-content: space-between;
-}
-
-ul {
-    list-style: none;
 }
 
 .main-content {
@@ -41,8 +23,6 @@ ul {
 }
 
 .sidebar {
-    /* overflow-y: hidden;
-    overflow-x: hidden; */
     flex: 1 0 auto;
     overflow: scroll;
     height: 100vh;
@@ -51,14 +31,12 @@ ul {
 
 .list-title {
     font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .list-item {
     list-style-type: none;
     font-size: 1.1rem;
     line-height: 1.5rem;
-    color: var(--gray-text);
+    color: pink;
 }
-

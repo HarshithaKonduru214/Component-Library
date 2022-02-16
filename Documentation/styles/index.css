@@ -1,17 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url('/Components/color-palette.css');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-  --primary-color: #399283;
-  --gray-text: gray;
-  --secondary-color: #BEDCFE;
-}
-
-.nav-title {
-  font-size: 2rem;
-  color: var(--primary-color);
-  font-weight: 900;
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-title {
@@ -24,17 +16,6 @@ body {
   justify-content: space-around;
 }
 
-.navbar {
-  justify-content: space-between;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-
-.primary-button-outlined:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
 
 .main-container {
   align-items: center;
@@ -54,31 +35,4 @@ body {
   color: var(--gray-text);
   font-size: 1.2rem;
   line-height: 2rem;
-}
-
-.min-height {
-  height: min-content;
-  justify-content: center;
-  width: fit-content;
-}
-
-.nav-icon {
-  min-width: 2rem;
-  margin-right: 0.5rem;
-  background-color: white;
-}
-
-a {
-  display: flex;
-  text-decoration: none;
-}
-
-.main-buttons > a {
-  justify-content: center;
-}
-
-.nav-icon:hover {
-  background-color: var(--secondary-color);
-  border-radius: 50%;
-  transform: scale(1.2);
 }

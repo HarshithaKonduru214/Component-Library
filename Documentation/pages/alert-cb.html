@@ -7,30 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alert Documentation</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 
 <body>
-    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-        <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
-        <div class="nav-buttons flex-row">
-            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
-        </div>
-    </nav>
+    <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+		<div class="nav-title align-self-center">OXYGEN UI</div>
+		<div class="nav-buttons flex-row">
+			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
+			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+	</nav>
 
-    <div class="main flex-row">
+    <div class="main-container flex-row">
         <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
+            <ul class="list-title m-2 align-self-center">Getting Started
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
                 </li>
                 <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
                 <li class="list-item"><a href="/Documentation/pages/text-cb.html" class="button secondary-button-outlined">Typography</a></li>
             </ul>
-            <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
+            <ul class="list-title m-2 align-self-center">Components
+                <li class="list-item m-2-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
                 <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
                 <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
                 <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
@@ -42,49 +40,52 @@
             </ul>
         </div>
 
-        <div class="main-content flex-column margin-right">
+        <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom padding-left">ALERTS</div>
-                <pre class="align-center-item margin-bottom"><code class="">
+                <div class="main-content-title mb-2 pl-2 black-text">ALERTS</div>
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/alert/alert.css")
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Solid Alerts</strong></div>
+                    <div class="variation-title black-text"><strong>Solid Alerts</strong></div>
                     <div class="variation-desc">This component is used to display
                         solid alerts.</div>
-                    <div class="variation-component align-center-item">
+                    <div class="variation-component align-item-center">
                         <div class="alert-container">
-                            <div class="alert alert-success padding margin-bottom">
-                                <strong>Success</strong> - This is a success alert!
+                            <div class="alert alert-success p-2 mb-2">
+                                Success - This is a success alert!
                             </div>
-                            <div class="alert alert-error padding margin-bottom">
-                                <strong>Error</strong> - This is an error alert!
+                    
+                            <div class="alert alert-error p-2 mb-2">
+                                Error - This is an error alert!
                             </div>
-                            <div class="alert alert-primary padding margin-bottom">
-                                <strong>Primary</strong> - This is a primary alert!
+                    
+                            <div class="alert alert-primary p-2 mb-2">
+                                Primary - This is a primary alert!
                             </div>
-                            <div class="alert alert-warning padding margin-bottom">
-                                <strong>Warning</strong> - This is a warning alert!
+                    
+                            <div class="alert alert-warning p-2 mb-2">
+                                Warning - This is a warning alert!
                             </div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
+                        <pre class="mb-2"><code class="language-html">
 &ltdiv class="alert-container">
-    &ltdiv class="alert alert-success padding margin-bottom">
-        &ltstrong>Success&lt/strong> - This is a success alert!
+    &ltdiv class="alert alert-success p-2 mb-2">
+        Success - This is a success alert!
     &lt/div>
-    &ltdiv class="alert alert-error padding margin-bottom">
-        &ltstrong>Error&lt/strong> - This is an error alert!
+    &ltdiv class="alert alert-error p-2 mb-2">
+        Error - This is an error alert!
     &lt/div>
-    &ltdiv class="alert alert-primary padding margin-bottom">
-        &ltstrong>Primary&lt/strong> - This is a primary alert!
+    &ltdiv class="alert alert-primary p-2 mb-2">
+        Primary - This is a primary alert!
     &lt/div>
-    &ltdiv class="alert alert-warning padding margin-bottom">
-        &ltstrong>Warning&lt/strong> - This is a warning alert!
+    &ltdiv class="alert alert-warning p-2 mb-2">
+        Warning - This is a warning alert!
     &lt/div>
 &lt/div>
                         </code></pre>
@@ -92,47 +93,47 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Outlined Alerts</strong></div>
+                    <div class="variation-title black-text"><strong>Outlined Alerts</strong></div>
                     <div class="variation-desc">This component is used to display
                         outlined alerts.</div>
                     <div class="variation-component align-center-item">
-                        <div class="alert-container container">
-                            <div class="alert alert-success-outlined padding margin-bottom">
-                                <strong>Success</strong> - This is a success alert!
+                        <div class="alert-container">
+                            <div class="alert alert-success-outlined p-2 mb-2">
+                                Success - This is a success alert!
                             </div>
-                            <div class="alert alert-error-outlined padding margin-bottom">
-                                <strong>Error</strong> - This is an error alert!
-                            </div>
-                            <div class="alert alert-primary-outlined padding margin-bottom">
-                                <strong>Primary</strong> - This is a primary alert!
-                            </div>
-                            <div class="alert alert-warning-outlined padding margin-bottom">
-                                <strong>Warning</strong> - This is a warning alert!
-                            </div>
+                            <div class="alert alert-error-outlined p-2 mb-2">
+                                Error - This is an error alert!
+                            </div>                    
+                            <div class="alert alert-primary-outlined p-2 mb-2">
+                                Primary - This is a primary alert!
+                            </div>                   
+                            <div class="alert alert-warning-outlined p-2 mb-2">
+                                Warning - This is a warning alert!
+                            </div>                    
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
+                        <pre class="mb-2"><code class="language-html">
 &ltdiv class="alert-container">
-    &ltdiv class="alert alert-success-outlined padding margin-bottom">
-        &ltstrong>Success&lt/strong> - This is a success alert!
+    &ltdiv class="alert alert-success-outlined p-2 mb-2">
+        Success - This is a success alert!
     &lt/div>
-    &ltdiv class="alert alert-error-outlined padding margin-bottom">
-        &ltstrong>Error&lt/strong> - This is an error alert!
-    &lt/div>
-    &ltdiv class="alert alert-primary-outlined padding margin-bottom">
-        &ltstrong>Primary&lt/strong> - This is a primary alert!
-    &lt/div>
-    &ltdiv class="alert alert-warning-outlined padding margin-bottom">
-        &ltstrong>Warning&lt/strong> - This is a warning alert!
-    &lt/div>
+    &ltdiv class="alert alert-error-outlined p-2 mb-2">
+        Error - This is an error alert!
+    &lt/div>                    
+    &ltdiv class="alert alert-primary-outlined p-2 mb-2">
+        Primary - This is a primary alert!
+    &lt/div>                   
+    &ltdiv class="alert alert-warning-outlined p-2 mb-2">
+        Warning - This is a warning alert!
+    &lt/div>                    
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
             </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom">
+            <footer class="footer-buttons flex-row mb-2 justify-content-between">
                 <a class="button secondary-button-outlined" href="/Documentation/pages/badge-cb.html">
                     << Badge</a> <a class="button secondary-button-outlined" href="/Documentation/pages/button-cb.html">Buttons >>
                 </a>

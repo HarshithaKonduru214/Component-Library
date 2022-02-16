@@ -1,4 +1,21 @@
-@import url("/Components/color-palette.css");
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+
+:root {
+  --primary-color: #6ee7b7;
+  --secondary-color: #BBB5BD;
+  --error: #dc2626;
+  --warning: #fb923c;
+  --success: #4ade80;
+  --white-text: #fff;
+  --status-online: green;
+  --status-busy: red;
+  --status-offline: gray;
+}
+
+body {
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 
 .list-heading {
     line-height: 1.5rem;

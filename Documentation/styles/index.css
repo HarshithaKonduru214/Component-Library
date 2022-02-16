@@ -6,33 +6,75 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.main-title {
+.main-title-home {
   font-size: 2.5rem;
   color: var(--primary-color);
   font-weight: 600;
 }
 
-.main-buttons {
-  justify-content: space-around;
-}
-
-
-.main-container {
+.main-container-home {
   align-items: center;
   justify-items: center;
 }
 
-.main-image {
+.main-image-home {
   width: 100%;
   height: auto;
 }
 
-.image-container {
+.image-container-home {
   max-width: 25%;
 }
 
-.main-content {
+.main-content-home {
   color: var(--gray-text);
   font-size: 1.2rem;
   line-height: 2rem;
 }
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+.main {
+  gap: 5rem;
+}
+
+.main-content-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.variation-title {
+  font-size: 1.5rem;
+}
+
+.main-content {
+  flex: 2 0 auto;
+  width: 70%;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 1 0 auto;
+  overflow: scroll;
+  height: 100vh;
+  text-transform: uppercase;
+}
+
+.list-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.list-item {
+  list-style-type: none;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.variation-desc {
+  font-size: 1.2rem;
+}
+

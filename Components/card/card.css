@@ -36,7 +36,7 @@ body {
   color: var(--gray-text);
 }
 
-.badge {
+.card-badge {
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   font-weight: 700;

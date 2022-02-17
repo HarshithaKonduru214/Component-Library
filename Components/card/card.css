@@ -7,7 +7,7 @@ body {
 }
 
 .card-container {
-  width: 25%;
+  width: 25rem;
   background-color: white;
   border-radius: 0.5rem;
   position: relative;
@@ -23,6 +23,7 @@ body {
 
 .horizontal-card {
   width: fit-content;
+  margin: auto;
 }
 
 .card-heading {
@@ -69,7 +70,6 @@ body {
 
 .card-button {
   font-size: 1rem;
-  padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   font-weight: bold;
   cursor: pointer;
@@ -100,15 +100,32 @@ body {
 }
 
 .card-badge {
-  position: absolute;
-  right: 0;
-  top: 0.5rem;
   padding: 0.5rem;
   color: var(--gray-text);
   font-weight: bold;
-  background-color: var(--secondary-color);
+  
+}
+
+.card-badge-top {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
 }
 
 .card-rating-value {
   color: var(--primary-color);
+}
+
+.text-overlay {
+  opacity: 0.2;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 2rem;
+  font-weight: bold;
 }

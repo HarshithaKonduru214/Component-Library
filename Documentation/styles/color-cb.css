@@ -22,11 +22,11 @@
 }
 
 .default-color {
-    background-color: var(--black-text);
+    background-color: #000;
 }
 
 .gray-color {
-    background-color: var(--gray-text);
+    background-color: gray;
 }
 
 .success-color {

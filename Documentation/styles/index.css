@@ -68,13 +68,20 @@ body {
   font-weight: bold;
 }
 
-.list-item {
+.list-item > a {
   list-style-type: none;
   font-size: 1.1rem;
   line-height: 1.5rem;
+  color: gray;
+}
+
+.list-item {
+  align-self: flex-start;
 }
 
 .variation-desc {
   font-size: 1.2rem;
+  color: gray;
 }
+
 

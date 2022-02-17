@@ -32,6 +32,11 @@ body {
   line-height: 2rem;
 }
 
+.main-buttons {
+  margin: auto;
+  gap: 1rem;
+}
+
 ::-webkit-scrollbar {
   width: 2px;
 }

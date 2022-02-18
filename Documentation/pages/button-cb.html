@@ -11,21 +11,26 @@
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
-		<div class="nav-title align-self-center">OXYGEN UI</div>
-		<div class="nav-buttons flex-row">
-			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
-			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-linkedin-in"></i></a>
-		</div>
-	</nav>
+        <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
+        <div class="nav-buttons flex-row">
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+    </nav>
 
-    <div class="main flex-row">
+    <div class="main-container flex-row">
         <div class="sidebar flex-column ml-2">
             <ul class="list-title flex-column">Getting Started
-                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html"
+                        class="button">Introduction</a>
                 </li>
                 <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
-                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a>
+                </li>
             </ul>
             <ul class="list-title flex-column">Components
                 <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
@@ -43,6 +48,10 @@
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
                 <div class="main-content-title mb-2">BUTTONS</div>
+                <div class="variation-desc mb-2">Buttons are components user can click to perform an action and interact
+                    with the website. Oxygen provides 4 types of buttons namely: <code>Primary Buttons | Secondary
+                        Buttons | Buttons with Icons | Floating Buttons</code>.<br> To use these buttons in your project
+                    import the below stylesheet.</div>
                 <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/button/button.css")
                 </code></pre>
@@ -50,39 +59,45 @@
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title black-text"><strong>Solid Buttons</strong></div>
-                    <div class="variation-desc mb-2">This component is typically used to display
-                        solid buttons that are essentially used for primary actions.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-title black-text mb-2 mt-2"><strong>Solid Buttons</strong></div>
+                    <div class="variation-desc mb-2">Use
+                        the base class <code>button</code> to generate a simple button. Oxygen provides 3 types of
+                        solid buttons namely: primary, secondary and a danger button.<br> Use the class
+                        <code>primary-button | secondary-button | danger-button</code> to use the appropriate button.
+                    </div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="button-solid-container">
                             <button class="m-1 button primary-button">Primary Button</button>
                             <button class="m-1 button secondary-button">Secondary Button</button>
                             <button class="m-1 button danger-button">Danger Button</button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="button-solid-container">
     &ltbutton class="m-1 button primary-button">Primary Button&lt/button>
     &ltbutton class="m-1 button secondary-button">Secondary Button&lt/button>
     &ltbutton class="m-1 button danger-button">Danger Button&lt/button>
 &lt/div> 
-                        </code></pre>            
+                        </code></pre>
                     </div>
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Outlined Buttons</strong></div>
-                    <div class="variation-desc mb-2">This component is used to display
-                        outlined buttons that can be used as secondary buttons.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-title mt-2 mb-2"><strong>Outlined Buttons</strong></div>
+                    <div class="variation-desc mb-2">Use
+                        the base class <code>button</code> to generate a simple button. Oxygen provides 3 types of
+                        solid buttons namely: primary, secondary and a danger button. <br> Use the class
+                        <code>primary-button-outlined | secondary-button-outlined | danger-button-outlined</code> to use
+                        the appropriate button. </div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="button-outlined-container">
                             <button class="m-1 button primary-button-outlined">Primary Button</button>
                             <button class="m-1 button secondary-button-outlined">Secondary Button</button>
                             <button class="m-1 button danger-button-outlined">Danger Button</button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="button-outlined-container">
     &ltbutton class="m-1 button primary-button-outlined">Primary Button&lt/button>
@@ -94,28 +109,29 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Button with Icons</strong></div>
-                    <div class="variation-desc mb-2">This component is used to display buttons that have icons.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-title mb-2 mt-2"><strong>Button with Icons</strong></div>
+                    <div class="variation-desc mb-2">Use
+                        the base class <code>button</code> to generate a simple button.</div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="button-icon-container flex-row">
-                            <button class="m-1 button primary-button flex-row flex-align">
+                            <button class="m-1 button primary-button flex-row">
                                 <i class="mr-1 fas fa-shopping-cart"></i>
                                 <span>Add to Cart</span>
                             </button>
-                            <button class="m-1 button danger-button flex-row flex-align">
+                            <button class="m-1 button danger-button flex-row">
                                 <i class="mr-1 fas fa-trash"></i>
                                 <span>Delete</span>
                             </button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="button-icon-container flex-row">
-    &ltbutton class="m-1 button primary-button flex-row flex-align">
+    &ltbutton class="m-1 button primary-button flex-row">
         &lti class="mr-1 fas fa-shopping-cart">&lt/i>
         &ltspan>Add to Cart&lt/span>
     &lt/button>
-    &ltbutton class="m-1 button danger-button flex-row flex-align">
+    &ltbutton class="m-1 button danger-button flex-row">
         &lti class="mr-1 fas fa-trash">&lt/i>
         &ltspan>Delete&lt/span>
     &lt/button>
@@ -125,16 +141,18 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Floating Buttons</strong></div>
-                    <div class="variation-desc mb-2">This component is used to display floating buttons.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-title mt-2 mb-2"><strong>Floating Buttons</strong></div>
+                    <div class="variation-desc mb-2">Floating action buttons are used to perform primary or common
+                        actions on the screen. Circular in shape, they remain fixed on the bottom right corner of the
+                        screen and float on top of all content.<br> Use the class <code>float-button</code> to use it.</div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="button-float-container">
                             <button class="m-1 float-button primary-button">
                                 <i class="fas fa-plus"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="button-float-container">
     &ltbutton class="m-1 float-button primary-button">

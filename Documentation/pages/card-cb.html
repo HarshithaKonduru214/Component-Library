@@ -12,7 +12,7 @@
 
 <body>
   <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
-    <div class="nav-title align-self-center">OXYGEN UI</div>
+    <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
     <div class="nav-buttons flex-row">
       <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
           class="fab fa-github"></i></a>
@@ -23,7 +23,7 @@
     </div>
   </nav>
 
-  <div class="main flex-row">
+  <div class="main-container flex-row">
     <div class="sidebar flex-column ml-2">
       <ul class="list-title flex-column">Getting Started
         <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
@@ -47,6 +47,11 @@
     <div class="main-content flex-column mr-2">
       <div class="main-comp-title flex-column">
         <div class="main-content-title mb-2">CARDS</div>
+        <div class="variation-desc mb-2">Cards groups and displays information related to a product, category or service
+          using components like text, images, badges, etc to grab the user's attention.<br> Oxygen provides a range of
+          cards namely: <code>Card with Badges | Product Card with Badge | Cards with Dismiss | Cards with Text Overlay
+            | Text only Card | Horizontal Card</code><br> To use these cards in your project
+          import the below stylesheet.</div>
         <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/card/card.css")
                 </code></pre>
@@ -54,9 +59,10 @@
 
       <ul class="main-comp-variations mb-2 flex-column">
         <li class="comp-variations flex-column">
-          <div class="variation-title black-text"><strong>Cards with badges</strong></div>
-          <div class="variation-desc">This component is used to display information in vertical cards.</div>
-          <div class="variation-component align-self-center">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with badges</strong></div>
+          <div class="variation-desc mb-2">This is a basic vertical card with an image, heading, content and badges.
+          </div>
+          <div class="variation-component align-self-center mb-2">
             <div class="card-container box-shadow flex-column mb-2">
               <div class="card-image-container mb-2">
                 <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
@@ -74,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="variation-comp-code align-self-center container">
+          <div class="variation-comp-code align-self-center container mb-2">
             <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow flex-column mb-2">
   &ltdiv class="card-image-container mb-2">
@@ -96,9 +102,10 @@
         </li>
 
         <li class="comp-variations flex-column">
-          <div class="variation-title black-text"><strong>Cards with product</strong></div>
-          <div class="variation-desc">This component is used to display information about a specific product.</div>
-          <div class="variation-component align-self-center">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with product</strong></div>
+          <div class="variation-desc mb-2">This is a vertical card with an image, heading, price details, rating,
+            buttons and a badge.</div>
+          <div class="variation-component align-self-center mb-2">
             <div class="card-container box-shadow flex-column mb-2 container">
               <div class="card-image-container">
                 <img class="card-image" src="https://pulse-fragrances.netlify.app/images/perfume.jpg" alt="image" />
@@ -128,7 +135,7 @@
               <div class="card-badge-top">10% OFF</div>
             </div>
           </div>
-          <div class="variation-comp-code align-self-center container">
+          <div class="variation-comp-code align-self-center container mb-2">
             <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow flex-column mb-2">
   &ltdiv class="card-image-container">
@@ -163,10 +170,10 @@
         </li>
 
         <li class="comp-variations flex-column">
-          <div class="variation-title black-text"><strong>Cards with Dismiss</strong></div>
-          <div class="variation-desc">The component is used to display information in vertical cards with a
-            close icon.</div>
-          <div class="variation-component align-self-center">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with Dismiss</strong></div>
+          <div class="variation-desc mb-2">This is a vertical card with an image, heading, sub-heading, content, buttons
+            and a close icon.</div>
+          <div class="variation-component align-self-center mb-2">
             <div class="card-container box-shadow flex-column mb-2">
               <div class="card-image-container mb-2">
                 <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
@@ -196,7 +203,7 @@
               </div>
             </div>
           </div>
-          <div class="variation-comp-code align-self-center container">
+          <div class="variation-comp-code align-self-center container mb-2">
             <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow flex-column mb-2">
   &ltdiv class="card-image-container mb-2">
@@ -228,11 +235,12 @@
                         </code></pre>
           </div>
         </li>
+
         <li class="comp-variations flex-column">
-          <div class="variation-title"><strong>Cards with Text Overlay</strong></div>
-          <div class="variation-desc">The component is used to display information in vertical cards with text
-            overlay.</div>
-          <div class="variation-component align-self-center">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with Text Overlay</strong></div>
+          <div class="variation-desc mb-2">This card contains an overlay text that is used to display an important
+            information to the user.</div>
+          <div class="variation-component align-self-center mb-2">
             <div class="card-container box-shadow flex-column mb-2">
               <div class="card-image-container mb-2 text-overlay">
                 <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
@@ -263,7 +271,7 @@
               </div>
             </div>
           </div>
-          <div class="variation-comp-code align-self-center container">
+          <div class="variation-comp-code align-self-center container mb-2">
             <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow flex-column mb-2">
   &ltdiv class="card-image-container mb-2 text-overlay">
@@ -297,10 +305,11 @@
                         </code></pre>
           </div>
         </li>
+
         <li class="comp-variations flex-column">
-          <div class="variation-title"><strong>Text only Cards</strong></div>
-          <div class="variation-desc">The component is used to display information in vertical cards.</div>
-          <div class="variation-component align-self-center">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Text only Cards</strong></div>
+          <div class="variation-desc mb-2">This is a vertical card with only heading and text.</div>
+          <div class="variation-component align-self-center mb-2">
             <div class="card-container box-shadow flex-column mb-2">
               <div class="card-heading-container mb-2 mt-2">
                 <div class="card-heading p-2">Mountain</div>
@@ -312,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="variation-comp-code container">
+          <div class="variation-comp-code container mb-2">
             <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow flex-column mb-2">
   &ltdiv class="card-heading-container mb-2 mt-2">
@@ -327,10 +336,10 @@
           </div>
         </li>
         <li class="comp-variations flex-column">
-          <div class="variation-title"><strong>Horizontal Card</strong></div>
-          <div class="variation-desc">The component is used to display information in horizontal cards.</div>
+          <div class="variation-title black-text mb-2 mt-2"><strong>Horizontal Card</strong></div>
+          <div class="variation-desc mb-2">This card contains an image, product details and a couple of buttons.</div>
           <div class="variation-component">
-            <div class="card-container box-shadow horizontal-card justify-self-center">
+            <div class="card-container box-shadow horizontal-card justify-self-center mb-2">
               <div class="card-header flex-row mb-2 mt-2">
                 <div class="card-image-container p-1">
                   <img class="card-image image-no-border" src="https://pulse-fragrances.netlify.app/images/perfume.jpg"
@@ -364,7 +373,7 @@
                 </div>
               </div>
             </div>
-            <div class="variation-comp-code container">
+            <div class="variation-comp-code container mb-2">
               <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow horizontal-card">
   &ltdiv class="card-header flex-row mb-2 mt-2">

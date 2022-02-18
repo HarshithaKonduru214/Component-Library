@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
-		<div class="nav-title align-self-center">OXYGEN UI</div>
+		<a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
 		<div class="nav-buttons flex-row">
 			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
 			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
@@ -45,9 +45,10 @@
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
                 <div class="main-content-title mb-2">INPUT</div>
-                <div class="main-content-desc mb-2">This component is generally used to take inputs from the user. You
+                <div class="variation-desc mb-2">This component is generally used to take inputs from the user. You
                     can change the type attribute in the input tag to take different types of input namely text,
-                    number, email, password, etc. from the user.</div>
+                    number, email, password, etc. from the user.<br>To use these input elements in your project
+                    import the below stylesheet</div>
                 <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/input/input.css")
                 </code></pre>
@@ -55,16 +56,16 @@
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Input Text Box</strong></div>
+                    <div class="variation-title mb-2 mt-2"><strong>Input Text Box</strong></div>
                     <div class="variation-desc mb-2">This component is used to take text input from the user.
                     </div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-component align-self-center mb-2">
                         <div class="input">
                             <input class="input-text" type="text" />
                             <div class="placeholder">Name</div>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="input">
     &ltinput class="input-text" type="text" />
@@ -75,10 +76,10 @@
                     </div>
                 </li>
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Validation Text Box</strong></div>
-                    <div class="variation-desc">There are 3 validations available apart from default namely success,
+                    <div class="variation-title mb-2 mt-2"><strong>Validation Text Box</strong></div>
+                    <div class="variation-desc mb-2">There are 3 validations available apart from default namely success,
                         warning and error.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-component align-self-center mb-2">
                         <div class="input">
                             <input class="input-text input-success" type="text" />
                             <div class="placeholder success">Name</div>
@@ -92,7 +93,7 @@
                             <div class="placeholder warn">Name</div>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="input">
     &ltinput class="input-text input-success" type="text" />

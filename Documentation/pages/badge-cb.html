@@ -22,13 +22,15 @@
         </div>
     </nav>
 
-    <div class="main flex-row">
+    <div class="main-container flex-row">
         <div class="sidebar flex-column ml-2">
             <ul class="list-title flex-column">Getting Started
-                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html"
+                        class="button">Introduction</a>
                 </li>
                 <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
-                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a>
+                </li>
             </ul>
             <ul class="list-title flex-column">Components
                 <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
@@ -46,6 +48,11 @@
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
                 <div class="main-content-title mb-2">BADGES</div>
+                <div class="variation-desc mb-2">Badges display quick and easy status, text or number information to the
+                    user. Oxygen
+                    provides 3 types of badges namely: <code>Badge over Text | Badge over Button | Badge over Icon
+                    </code>.<br> To use these badges in your project import the below stylesheet.
+                </div>
                 <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/badge/badge.css")
                 </code></pre>
@@ -53,17 +60,20 @@
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badge over Text</strong></div>
+                    <div class="variation-title mb-2 mt-2"><strong>Badge over Text</strong></div>
                     <div class="variation-desc mb-2 gray-text">This component is typically used to display
-                        badges over text.</div>
-                    <div class="variation-component align-self-center">
+                        badges over text.<br> Use the base class <code>badge</code> to generate a simple badge along
+                        with the class <code>badge-text</code> to generate a badge over a text element. The class
+                        <code>badge-position-text</code> can be used to play around with the position of the badge over
+                        the text.</div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="badge-container p-2">
                             <div class="text gray-text">Text over badge.
                                 <div class="badge badge-text badge-position-text">NEW</div>
                             </div>
                         </div>
                     </div>
-                    <div class="variation-comp-code container">
+                    <div class="variation-comp-code container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="badge-container p-2">
     &ltdiv class="text gray-text">Text over badge.
@@ -75,17 +85,19 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badge over Button</strong></div>
+                    <div class="variation-title mb-2 mt-2"><strong>Badge over Button</strong></div>
                     <div class="variation-desc mb-2 gray-text">This component is used to display
-                        badges over buttons.</div>
-                    <div class="variation-component align-self-center">
+                        badges over buttons.<br> Use the base class <code>badge</code> to generate a simple badge along
+                        with the class <code>badge-position-button</code> to play around with the positon of the badge.
+                    </div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="badge-container p-2">
                             <button class="badge-button">Action
                                 <p class="badge badge-position-button">9</p>
                             </button>
                         </div>
                     </div>
-                    <div class="variation-comp-code container">
+                    <div class="variation-comp-code container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="badge-container p-2">
     &ltbutton class="badge-button">Action
@@ -97,16 +109,16 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Badges over Icon</strong></div>
-                    <div class="variation-desc gray-text">This component is used to display badges over icons.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-title mb-2 mt-2"><strong>Badges over Icon</strong></div>
+                    <div class="variation-desc gray-text">This component is used to display badges over icons.<br> Use the base class <code>badge</code> to generate a simple badge along with the class <code>badge-position-icon</code> to play around with the position of the badge.</div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="badge-container p-2">
                             <i class="badge-icon fas fa-shopping-cart">
                                 <p class="badge badge-position-icon">8</p>
                             </i>
                         </div>
                     </div>
-                    <div class="variation-comp-code container">
+                    <div class="variation-comp-code container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="badge-container p-2">
     &lti class="badge-icon fas fa-shopping-cart">

@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
-		<div class="nav-title align-self-center">OXYGEN UI</div>
+		<a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
 		<div class="nav-buttons flex-row">
 			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
 			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
@@ -20,7 +20,7 @@
 		</div>
 	</nav>
 
-    <div class="main flex-row">
+    <div class="main-container flex-row">
         <div class="sidebar flex-column ml-2">
             <ul class="list-title flex-column">Getting Started
                 <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
@@ -46,21 +46,21 @@
                 <div class="main-content-title mb-2">TYPOGRAPHY</div>
                 <div class="variation-desc mb-2">Typography is the style or appearance of text. It can also refer to the
                     art of working with text something you probably do all the time. To import the entire component into
-                    your project import the below stylesheet into your project.<br>Default font family: "Arial".
+                    your project import the below stylesheet into your project.<br>Default font family: "Roboto".
                 </div>
-                <pre class="align-center-item mb-2"><code class="">
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/text/text.css");
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title mb-2"><strong>Headings</strong></div>
+                    <div class="variation-title mb-2 mt-2"><strong>Headings</strong></div>
                     <div class="variation-desc mb-2">Oxygen UI provides 6 levels of headings which can be used
-                        for the titles or sub-titles. Use the classname <code>h1</code> (3.5rem), <code>h2</code>
-                        (3rem), <code>h3</code> (2.5rem), <code>h4</code> (2rem), <code>h5</code> (1.5rem) and
-                        <code>h6</code> (1rem).</div>
-                    <div class="variation-component align-center-item mb-2">
+                        for the titles or sub-titles. Use the classname <code>heading-1</code> (3.5rem), <code>heading-2</code>
+                        (3rem), <code>heading-3</code> (2.5rem), <code>heading-4</code> (2rem), <code>heading-5</code> (1.5rem) and
+                        <code>heading-6</code> (1rem).</div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="text-heading p-2">
                             <h1 class="heading-1">Component</h1>
                             <h2 class="heading-2">Component</h2>
@@ -70,7 +70,7 @@
                             <h6 class="heading-6">Component</h6>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="text-heading p-2">
     &lth1 class="heading-1">Component Library&lt/h1>
@@ -85,7 +85,7 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title mb-2"><strong>Gray Text</strong></div>
+                    <div class="variation-title mb-2 mt-2"><strong>Gray Text</strong></div>
                     <div class="variation-desc mb-2">This is used to display
                         the information in gray. Use the classname <code>gray-text</code> to get your text in gray.
                     </div>
@@ -94,7 +94,7 @@
                             <p class="gray-text text">Component Library</p>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
+                    <div class="variation-comp-code container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="box-shadow p-2">
     &ltp class="gray-text text">Component Library&lt/p>
@@ -104,7 +104,7 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title mb-2"><strong>Centered Text</strong></div>
+                    <div class="variation-title mb-2 mt-2"><strong>Centered Text</strong></div>
                     <div class="variation-desc mb-2">This is used to display the information at the
                         center of the container. Use the classname <code>centered-text</code> to get your text aligned
                         to the center of the container.</div>
@@ -113,7 +113,7 @@
                             <p class="centered-text text">Component Library</p>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
+                    <div class="variation-comp-code container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="box-shadow p-2">
     &ltp class="centered-text text">Component Library&lt/p>

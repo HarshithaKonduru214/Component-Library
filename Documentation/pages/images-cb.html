@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
-		<div class="nav-title align-self-center">OXYGEN UI</div>
+		<a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
 		<div class="nav-buttons flex-row">
 			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
 			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
@@ -21,7 +21,7 @@
 		</div>
 	</nav>
 
-    <div class="main flex-row">
+    <div class="main-container flex-row">
         <div class="sidebar flex-column ml-2">
             <ul class="list-title flex-column">Getting Started
                 <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
@@ -45,6 +45,8 @@
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
                 <div class="main-content-title mb-2">IMAGES</div>
+                <div class="variation-desc mb-2">Images are used to provide visual information/aesthetic to a webpage.<br>To use these images in your project
+                    import the below stylesheet.</div>
                 <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/images/images.css")
                 </code></pre>
@@ -52,14 +54,14 @@
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Responsive Images</strong></div>
-                    <div class="variation-desc">This is used to display any image to the 100% of the parent container keeping the aspect ratio in place. Use the classname <code>image-responsive</code> to achieve this in your project.</div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-title mb-2 mt-2"><strong>Responsive Images</strong></div>
+                    <div class="variation-desc mb-2">This is used to display any image to the 100% of the parent container keeping the aspect ratio in place. Use the classname <code>image-responsive</code> to achieve this in your project.</div>
+                    <div class="variation-component align-self-center mb-2">
                         <div class="image-container">
                             <img class="image-responsive" src="https://picsum.photos/300/200" alt="Image">
                         </div>                    
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="image-container">
     &ltimg class="image-responsive" src="https://picsum.photos/300/200" alt="Image">
@@ -69,15 +71,15 @@
                     </div>
                 </li>
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Responsive round Images</strong></div>
-                    <div class="variation-desc">This is used to display any image in circular shape with the width being 100% of the parent container. Use the classname <code>image-round</code> to achieve this.
+                    <div class="variation-title mb-2 mt-2"><strong>Responsive round Images</strong></div>
+                    <div class="variation-desc mb-2">This is used to display any image in circular shape with the width being 100% of the parent container. Use the classname <code>image-round</code> to achieve this.
                        </div>
-                    <div class="variation-component align-self-center">
+                    <div class="variation-component align-self-center mb-2">
                         <div class="image-container">
                             <img class="image-round" src="https://picsum.photos/300/200" alt="Image">
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center container">
+                    <div class="variation-comp-code align-self-center container mb-2">
                         <pre class="mb-2"><code class="language-html">
 &ltdiv class="image-container">
     &ltimg class="image-round" src="https://picsum.photos/300/200" alt="Image">

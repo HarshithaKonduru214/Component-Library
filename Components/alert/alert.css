@@ -1,8 +1,9 @@
-:root {
-  --primary-color: rgb(133, 208, 233);
-  --error: rgb(241, 55, 55);
-  --warning: rgb(247, 184, 67);
-  --success: lightgreen;
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url('/Components/color-palette.css');
+
+body {
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .alert-container {
@@ -11,8 +12,10 @@
 
 .alert {
   border: solid 1px;
-  color: white;
+  color: var(--white-text);
   border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .alert-success {

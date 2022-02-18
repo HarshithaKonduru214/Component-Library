@@ -5,36 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buttons</title>
-	<link rel="stylesheet" href="/Components/utility.css">
+	<link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
     <link rel="stylesheet" href="button.css">
+	<script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="button-solid">
-		<button class="margin button primary-button">Primary Button</button>
-		<button class="margin button secondary-button">Secondary Button</button>
-		<button class="margin button danger-button">Danger Button</button>
+	<!-- solid buttons -->
+    <div class="button-solid-container">
+		<button class="m-1 button primary-button">Primary Button</button>
+		<button class="m-1 button secondary-button">Secondary Button</button>
+		<button class="m-1 button danger-button">Danger Button</button>
 	</div>
 
-	<div class="button-outlined">
-		<button class="margin button primary-button-outlined">Primary Button</button>
-		<button class="margin button secondary-button-outlined">Secondary Button</button>
-		<button class="margin button danger-button-outlined">Danger Button</button>
+	<!-- outlined buttons -->
+	<div class="button-outlined-container">
+		<button class="m-1 button primary-button-outlined">Primary Button</button>
+		<button class="m-1 button secondary-button-outlined">Secondary Button</button>
+		<button class="m-1 button danger-button-outlined">Danger Button</button>
 	</div>
 
-	<div class="button-icon flex-row">
-		<button class="margin button primary-button flex-row flex-align">
-			<img class="icon" src="cart-white.svg" alt="icon">
+	<!-- Icon buttons -->
+	<div class="button-icon-container flex-row">
+		<button class="m-1 button primary-button flex-row">
+			<i class="mr-1 fas fa-shopping-cart"></i>
 			<span>Add to Cart</span>
 		</button>
-		<button class="margin button danger-button flex-row flex-align">
-			<img class="icon" src="delete_white.svg" alt="icon">
+		<button class="m-1 button danger-button flex-row">
+			<i class="mr-1 fas fa-trash"></i>
 			<span>Delete</span>
 		</button>
 	</div>
 
-	<div class="button-float">
-		<button class="margin float-button primary-button">
-			<img src="add_white.svg" alt="Icon">
+	<!-- floating buttons -->
+	<div class="button-float-container">
+		<button class="m-1 float-button primary-button">
+			<i class="fas fa-plus"></i>
 		</button>
 	</div>
     

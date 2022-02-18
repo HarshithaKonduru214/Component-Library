@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url('/Components/color-palette.css');
+
 body {
-    font-family: sans-serif;
-  }
-  
-  .image-responsive {
-    min-width: 100%;
-    height: auto;
-  }
-  
-  .image-round {
-    border-radius: 50%;
-    min-width: 100%;
-    height: auto;
-  }
-  
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image-responsive {
+  min-width: 100%;
+  height: auto;
+}
+
+.image-round {
+  border-radius: 50%;
+  min-width: 100%;
+  height: auto;
+}

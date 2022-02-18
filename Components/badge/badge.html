@@ -6,25 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badge</title>
-  <link rel="stylesheet" href="/Components/utility.css">
-  <link rel="stylesheet" href="/Components/button/button.css">
-  <link rel="stylesheet" href="badge.css">
+  <link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
+  <link rel="stylesheet" href="/Components/badge/badge.css">
+  <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="badge-container">
-    <p class="text">Text over badge.</p>
-    <p class="badge badge-text badge-position-text">NEW</p>
+  <!-- badge over text -->
+  <div class="badge-container p-2">
+    <div class="text gray-text">Text over badge.
+      <div class="badge badge-text badge-position-text">NEW</div>
+    </div> 
   </div>
 
-  <div class="badge-container">
-    <button class="button margin">Action</button>
-    <p class="badge badge-position-button">9</p>
+  <!-- badge over button -->
+  <div class="badge-container p-2">
+    <button class="badge-button">Action
+      <p class="badge badge-position-button">9</p>
+    </button>    
   </div>
 
-  <div class="badge-container">
-    <img class="icon margin" src="cart.svg" alt="Icon" />
-    <p class="badge badge-position-icon">8</p>
+  <!-- badge over icon -->
+  <div class="badge-container p-2">
+    <i class="badge-icon fas fa-shopping-cart"><p class="badge badge-position-icon">8</p>
+    </i>  
   </div>
 </body>
 

@@ -5,48 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Badge and Avatars</title>
+	<link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
     <link rel="stylesheet" href="/Components/avatar/avatar.css">
 </head>
 <body>
 
-    <div class="avatar-circular-container">
-		<img class="avatar-xl circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-large circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-md circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-small circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-xs circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
+	<!-- Circular avatars -->
+    <div class="avatar-container flex-row">
+		<img class="avatar-xl circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-l circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-md circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-sm circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-xs circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
 	</div>
 
-	<div class="avatar-rounded-container">
-		<img class="avatar-xl rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-large rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-md rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">			
-		<img class="avatar-small rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-		<img class="avatar-xs rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
+	<!-- Square avatars -->
+	<div class="avatar-container flex-row">
+		<img class="avatar-xl square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-l square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-md square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">			
+		<img class="avatar-sm square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+		<img class="avatar-xs square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
 	</div>
 
-	<div class="avatar">
-		<div class="avatar-xl-status">
+	<!-- Avatars with status -->
+	<div class="avatar-container flex-row">
+		<div class="avatar-status-container m-1">
 			<img class="circular-avatar avatar-xl" src="https://picsum.photos/200" alt="avatar">
 			<span class="avatar-status status-online status-position-xl"></span>
 		</div>
 
-		<div class="avatar-large-status">
-			<img class="circular-avatar avatar-large" src="https://picsum.photos/200" alt="avatar">
-			<span class="avatar-status status-busy status-position-large"></span>
+		<div class="avatar-status-container m-1">
+			<img class="circular-avatar avatar-l" src="https://picsum.photos/200" alt="avatar">
+			<span class="avatar-status status-busy status-position-l"></span>
 		</div>
 
-		<div class="avatar-md-status">
+		<div class="avatar-status-container m-1">
 			<img class="circular-avatar avatar-md" src="https://picsum.photos/200" alt="avatar">
 			<span class="avatar-status status-offline status-position-md"></span>
 		</div>
 
-		<div class="avatar-small-status">
-			<img class="circular-avatar avatar-small" src="https://picsum.photos/200" alt="avatar">
-			<span class="avatar-status status-busy status-position-small"></span>
+		<div class="avatar-status-container m-1">
+			<img class="circular-avatar avatar-sm" src="https://picsum.photos/200" alt="avatar">
+			<span class="avatar-status status-busy status-position-sm"></span>
 		</div>
 
-		<div class="avatar-small-status">
+		<div class="avatar-status-container m-1">
 			<img class="circular-avatar avatar-xs" src="https://picsum.photos/200" alt="avatar">
 			<span class="avatar-status status-online status-position-xs"></span>
 		</div>

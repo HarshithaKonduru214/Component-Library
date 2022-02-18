@@ -7,84 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alert Documentation</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 
 <body>
-    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-        <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
+    <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+        <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
         <div class="nav-buttons flex-row">
-            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-linkedin-in"></i></a>
         </div>
     </nav>
 
-    <div class="main flex-row">
-        <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
+    <div class="main-container flex-row">
+        <div class="sidebar flex-column ml-2">
+            <ul class="list-title flex-column">Getting Started
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html"
+                        class="button">Introduction</a>
                 </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
-                <li class="list-item"><a href="/Documentation/pages/text-cb.html" class="button secondary-button-outlined">Typography</a></li>
+                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a>
+                </li>
             </ul>
-            <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
-                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
-                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
-                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
-                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button secondary-button-outlined">Card</a></li>
-                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
-                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button secondary-button-outlined">Images</a></li>
-                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
-                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
+            <ul class="list-title flex-column">Components
+                <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button">Navigation Bar</a></li>
             </ul>
         </div>
 
-        <div class="main-content flex-column margin-right">
+        <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom padding-left">ALERTS</div>
-                <pre class="align-center-item margin-bottom"><code class="">
+                <div class="main-content-title mb-2 black-text">ALERTS</div>
+                <div class="variation-desc mb-2">The alert component can be used to provide information to your users
+                    such as
+                    success or error messages, but also highlighted information complementing the normal flow of
+                    paragraphs and headers on a page. Oxygen provides two types of alerts namely: <code>Solid Alerts | Outlined Alerts</code><br>To use the alert component in your project import the below
+                    stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/alert/alert.css")
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Solid Alerts</strong></div>
-                    <div class="variation-desc">This component is used to display
-                        solid alerts.</div>
-                    <div class="variation-component align-center-item">
+                    <div class="variation-title black-text mb-2 mt-2"><strong>Solid Alerts</strong></div>
+                    <div class="variation-desc mb-2">Solid alerts are used to display important primary information to
+                        the user.<br>
+                        Use the base class <code>alert</code> to generate a simple alert. Oxygen
+                        provides 4 types of solid alerts namely success, error, primary and a warning alert.<br> Use the
+                        class <code>alert-success | alert-error | alert-primary | alert-warn</code> to get the
+                        appropriate alerts in your project.</div>
+                    <div class="variation-component align-item-center">
                         <div class="alert-container">
-                            <div class="alert alert-success padding margin-bottom">
-                                <strong>Success</strong> - This is a success alert!
+                            <div class="alert alert-success p-2 mb-2">
+                                Success - This is a success alert!
                             </div>
-                            <div class="alert alert-error padding margin-bottom">
-                                <strong>Error</strong> - This is an error alert!
+
+                            <div class="alert alert-error p-2 mb-2">
+                                Error - This is an error alert!
                             </div>
-                            <div class="alert alert-primary padding margin-bottom">
-                                <strong>Primary</strong> - This is a primary alert!
+
+                            <div class="alert alert-primary p-2 mb-2">
+                                Primary - This is a primary alert!
                             </div>
-                            <div class="alert alert-warning padding margin-bottom">
-                                <strong>Warning</strong> - This is a warning alert!
+
+                            <div class="alert alert-warning p-2 mb-2">
+                                Warning - This is a warning alert!
                             </div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
+                        <pre class="mb-2"><code class="language-html">
 &ltdiv class="alert-container">
-    &ltdiv class="alert alert-success padding margin-bottom">
-        &ltstrong>Success&lt/strong> - This is a success alert!
+    &ltdiv class="alert alert-success p-2 mb-2">
+        Success - This is a success alert!
     &lt/div>
-    &ltdiv class="alert alert-error padding margin-bottom">
-        &ltstrong>Error&lt/strong> - This is an error alert!
+    &ltdiv class="alert alert-error p-2 mb-2">
+        Error - This is an error alert!
     &lt/div>
-    &ltdiv class="alert alert-primary padding margin-bottom">
-        &ltstrong>Primary&lt/strong> - This is a primary alert!
+    &ltdiv class="alert alert-primary p-2 mb-2">
+        Primary - This is a primary alert!
     &lt/div>
-    &ltdiv class="alert alert-warning padding margin-bottom">
-        &ltstrong>Warning&lt/strong> - This is a warning alert!
+    &ltdiv class="alert alert-warning p-2 mb-2">
+        Warning - This is a warning alert!
     &lt/div>
 &lt/div>
                         </code></pre>
@@ -92,49 +107,52 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Outlined Alerts</strong></div>
-                    <div class="variation-desc">This component is used to display
-                        outlined alerts.</div>
+                    <div class="variation-title black-text mb-2 mt-2"><strong>Outlined Alerts</strong></div>
+                    <div class="variation-desc mb-2">Outlined alerts are used to display secondary information to the
+                        user.<br>Use the base class <code>alert</code> to generate a simple alert. Oxygen
+                        provides 4 types of outlined alerts namely success, error, primary and a warning alert.<br> Use the
+                        class <code>alert-success-outlined | alert-error-outlined | alert-primary-outlined | alert-warn-outlined</code> to get the
+                        appropriate alerts in your project.</div>
                     <div class="variation-component align-center-item">
-                        <div class="alert-container container">
-                            <div class="alert alert-success-outlined padding margin-bottom">
-                                <strong>Success</strong> - This is a success alert!
+                        <div class="alert-container">
+                            <div class="alert alert-success-outlined p-2 mb-2">
+                                Success - This is a success alert!
                             </div>
-                            <div class="alert alert-error-outlined padding margin-bottom">
-                                <strong>Error</strong> - This is an error alert!
+                            <div class="alert alert-error-outlined p-2 mb-2">
+                                Error - This is an error alert!
                             </div>
-                            <div class="alert alert-primary-outlined padding margin-bottom">
-                                <strong>Primary</strong> - This is a primary alert!
+                            <div class="alert alert-primary-outlined p-2 mb-2">
+                                Primary - This is a primary alert!
                             </div>
-                            <div class="alert alert-warning-outlined padding margin-bottom">
-                                <strong>Warning</strong> - This is a warning alert!
+                            <div class="alert alert-warning-outlined p-2 mb-2">
+                                Warning - This is a warning alert!
                             </div>
                         </div>
                     </div>
                     <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
+                        <pre class="mb-2"><code class="language-html">
 &ltdiv class="alert-container">
-    &ltdiv class="alert alert-success-outlined padding margin-bottom">
-        &ltstrong>Success&lt/strong> - This is a success alert!
+    &ltdiv class="alert alert-success-outlined p-2 mb-2">
+        Success - This is a success alert!
     &lt/div>
-    &ltdiv class="alert alert-error-outlined padding margin-bottom">
-        &ltstrong>Error&lt/strong> - This is an error alert!
-    &lt/div>
-    &ltdiv class="alert alert-primary-outlined padding margin-bottom">
-        &ltstrong>Primary&lt/strong> - This is a primary alert!
-    &lt/div>
-    &ltdiv class="alert alert-warning-outlined padding margin-bottom">
-        &ltstrong>Warning&lt/strong> - This is a warning alert!
-    &lt/div>
+    &ltdiv class="alert alert-error-outlined p-2 mb-2">
+        Error - This is an error alert!
+    &lt/div>                    
+    &ltdiv class="alert alert-primary-outlined p-2 mb-2">
+        Primary - This is a primary alert!
+    &lt/div>                   
+    &ltdiv class="alert alert-warning-outlined p-2 mb-2">
+        Warning - This is a warning alert!
+    &lt/div>                    
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
             </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom">
-                <a class="button secondary-button-outlined" href="/Documentation/pages/badge-cb.html">
-                    << Badge</a> <a class="button secondary-button-outlined" href="/Documentation/pages/button-cb.html">Buttons >>
+            <footer class="footer-buttons flex-row mb-2 justify-content-between">
+                <a class="button gray-text" href="/Documentation/pages/badge-cb.html">
+                    << Badge</a> <a class="button gray-text" href="/Documentation/pages/button-cb.html">Buttons >>
                 </a>
             </footer>
         </div>

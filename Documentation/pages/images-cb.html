@@ -7,59 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Listing</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-		<div class="nav-title align-center-item">OXYGEN UI</div>
+    <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+		<a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
 		<div class="nav-buttons flex-row">
-			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img src="/Documentation/images/github-brands.svg" /></a>
-			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img src="/Documentation/images/twitter-brands.svg" /></a>
-			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img src="/Documentation/images/linkedin-brands.svg" /></a>
+			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
+			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-linkedin-in"></i></a>
 		</div>
 	</nav>
 
-    <div class="main flex-row">
-        <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
+    <div class="main-container flex-row">
+        <div class="sidebar flex-column ml-2">
+            <ul class="list-title flex-column">Getting Started
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
                 </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
-                <li class="list-item"><a href="/Documentation/pages/text-cb.html" class="button secondary-button-outlined">Typography</a></li>
+                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a></li>
             </ul>
-            <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
-                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
-                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
-                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
-                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button secondary-button-outlined">Card</a></li>
-                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
-                <li class="list-item"><a href="#" class="button secondary-button-outlined">Images</a></li>
-                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
-                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
+            <ul class="list-title flex-column">Components
+                <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button">Navigation Bar</a></li>
             </ul>
         </div>
 
-        <div class="main-content flex-column margin-right">
+        <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom">IMAGES</div>
-                <pre class="align-center-item margin-bottom"><code class="">
+                <div class="main-content-title mb-2">IMAGES</div>
+                <div class="variation-desc mb-2">Images are used to provide visual information/aesthetic to a webpage.<br>To use these images in your project
+                    import the below stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/images/images.css")
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Responsive Images</strong></div>
-                    <div class="variation-desc">This is used to display any image to the 100% of the parent container keeping the aspect ratio in place. Use the classname <code>image-responsive</code> to achieve this in your project.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="image padding">
+                    <div class="variation-title mb-2 mt-2"><strong>Responsive Images</strong></div>
+                    <div class="variation-desc mb-2">This is used to display any image to the 100% of the parent container keeping the aspect ratio in place. Use the classname <code>image-responsive</code> to achieve this in your project.</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="image-container">
                             <img class="image-responsive" src="https://picsum.photos/300/200" alt="Image">
                         </div>                    
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="image">
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="image-container">
     &ltimg class="image-responsive" src="https://picsum.photos/300/200" alt="Image">
 &lt/div>
                         
@@ -67,17 +71,17 @@
                     </div>
                 </li>
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Responsive round Images</strong></div>
-                    <div class="variation-desc">This is used to display any image in circular shape with the width being 100% of the parent container. Use the classname <code>image-round</code> to achieve this.
+                    <div class="variation-title mb-2 mt-2"><strong>Responsive round Images</strong></div>
+                    <div class="variation-desc mb-2">This is used to display any image in circular shape with the width being 100% of the parent container. Use the classname <code>image-round</code> to achieve this.
                        </div>
-                    <div class="variation-component align-center-item">
-                        <div class="image padding">
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="image-container">
                             <img class="image-round" src="https://picsum.photos/300/200" alt="Image">
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="image">
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="image-container">
     &ltimg class="image-round" src="https://picsum.photos/300/200" alt="Image">
 &lt/div>
                         </code></pre>
@@ -86,9 +90,9 @@
 
             </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom space-between">
-                <a class="button secondary-button-outlined" href="/Documentation/pages/input-cb.html">
-                    << Input</a> <a class="button secondary-button-outlined" href="/Documentation/pages/lists-cb.html">List >>
+            <footer class="footer-buttons flex-row mb-2 justify-content-between">
+                <a class="button gray-text" href="/Documentation/pages/input-cb.html">
+                    << Input</a> <a class="button gray-text" href="/Documentation/pages/lists-cb.html">List >>
                 </a>
             </footer>
         </div>

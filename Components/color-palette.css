@@ -1,9 +1,11 @@
 :root {
-    --primary-color: #399283;
-    --gray-text: gray;
-    --secondary-color: #BEDCFE;
-    --error: red;
-    --warning: orange;
-    --success: lightgreen;
-  }
-  
+  --primary-color: #6ee7b7;
+  --secondary-color: #BBB5BD;
+  --error: #dc2626;
+  --warning: #fb923c;
+  --success: #4ade80;
+  --white-text: #fff;
+  --status-online: green;
+  --status-busy: red;
+  --status-offline: gray;
+}

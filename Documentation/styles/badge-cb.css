@@ -1,27 +1,4 @@
-:root {
-    --primary-color: #399283;
-    --gray-text: gray;
-    --secondary-color: #BEDCFE;
-}
-
 .badge-position-text {
-    left: 0rem;
-    top: -1.5rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    padding: 0.25rem 0.5rem;
-}
-
-.badge-position-button {
-    left: -1.3rem;
-    top: -2rem;
-    border-radius: 50%;
-    font-size: 1rem;
-}
-
-.badge-position-icon {
-    left: -1rem;
-    top: -2rem;
-    border-radius: 50%;
+    left: 8.3rem;
     font-size: 1rem;
 }

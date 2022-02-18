@@ -1,49 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url('/Components/color-palette.css');
+
+
 body {
-    font-family: sans-serif;
-  }
-  
-  .input {
-    position: relative;
-    margin: 1rem;
-  }
-  
-  .input-text {
-    border-radius: 0.3em;
-    border: gray solid 2px;
-    padding: 0.5rem 0.75rem;
-  }
-  
-  .placeholder {
-    position: absolute;
-    top: -1rem;
-    font-size: 1rem;
-    left: 1rem;
-    background-color: white;
-    padding: 0.1rem;
-  }
-  
-  .input-success {
-    border: green solid 2px;
-  }
-  
-  .input-error {
-    border: red solid 2px;
-  }
-  
-  .input-warn {
-    border: orange solid 2px;
-  }
-  
-  .success {
-    color: green;
-  }
-  
-  .errror {
-    color: red;
-  }
-  
-  .warn {
-    color: orange;
-  }
-  
-  
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input {
+  position: relative;
+  margin: 1rem;
+}
+
+.input-text {
+  border-radius: 0.3em;
+  border: gray solid 2px;
+  padding: 0.5rem 0.75rem;
+}
+
+.placeholder {
+  position: absolute;
+  top: -0.7rem;
+  font-size: 1rem;
+  left: 1rem;
+  background-color: var(--white-text);
+  padding: 0.1rem;
+}
+
+.input-success {
+  border: var(--success) solid 2px;
+}
+
+.input-error {
+  border: var(--error) solid 2px;
+}
+
+.input-warn {
+  border: var(--warning) solid 2px;
+}
+
+.success {
+  color: green;
+}
+
+.errror {
+  color: red;
+}
+
+.warn {
+  color: orange;
+}

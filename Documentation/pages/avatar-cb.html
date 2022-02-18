@@ -7,156 +7,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Listing</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-        <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
+    <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+        <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
         <div class="nav-buttons flex-row">
-            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-linkedin-in"></i></a>
         </div>
     </nav>
 
-    <div class="main flex-row padding">
-        <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
+    <div class="main-container flex-row">
+        <div class="sidebar flex-column ml-2">
+            <ul class="list-title flex-column">Getting Started
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html"
+                        class="button">Introduction</a>
                 </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
-                <li class="list-item"><a href="/Documentation/pages/text-cb.html" class="button secondary-button-outlined">Typography</a></li>
+                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a>
+                </li>
             </ul>
-            <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="#" class="button secondary-button-outlined">Avatar</a></li>
-                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
-                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
-                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
-                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button secondary-button-outlined">Card</a></li>
-                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
-                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button secondary-button-outlined">Images</a></li>
-                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
-                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
+            <ul class="list-title flex-column">Components
+                <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button">Navigation Bar</a></li>
             </ul>
         </div>
 
-        <div class="main-content flex-column margin-right">
+        <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom padding-left">AVATARS</div>
-                <pre class="align-center-item margin-bottom"><code class="">
+                <div class="main-content-title mb-2 black-text">AVATARS</div>
+                <div class="variation-desc mb-2">Avatars displays user image or initials as profile picture. Oxygen
+                    provides 3 types of avatars namely: <code>Circular Avatars | Square Avatars | Avatars with
+                        Status</code>.<br> To use these avatars in your project import the below stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/avatar/avatar.css")
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Circular Avatars</strong></div>
-                    <div class="variation-desc">The <strong>avatar</strong> component is typically used to display
-                        circular user profile pictures. It is typically available in 5 sizes: avatar-xl(5rem),
-                        avatar-large(4rem), avatar-md(3rem), avatar-small(2rem), avatar-xs(1.5rem).</div>
-                    <div class="variation-component align-center-item">
-                        <div class="avatar-circular-container">
-                            <img class="avatar-xl circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-large circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-md circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-small circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-xs circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
+                    <div class="variation-title black-text mb-2 mt-2"><strong>Circular Avatars</strong></div>
+                    <div class="variation-desc mb-2">Circular avatar component is used to display profile pictures or
+                        initials in circular containers. <br>Use the base class <code>circular-avatar</code> to generate
+                        a
+                        circular avatar. Oxygen provides 5 sizes namely: avatar-xl (5rem), avatar-l (4rem), avatar-md
+                        (3rem), avatar-s (2rem) and avatar-xs (1rem). <br>Use the class <code>avatar-xl | avatar-l |
+                            avatar-md | avatar-s | avatar-xs</code> respectively to get the appropriate size in your
+                        project.</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="avatar-container flex-row">
+                            <img class="avatar-xl circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-l circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-md circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-sm circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-xs circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="avatar-circular-container">
-    &ltimg class="avatar-xl circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-large circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-md circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-small circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-xs circular-avatar" src="https://picsum.photos/200" alt="avatar-img">
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="avatar-container flex-row">
+    &ltimg class="avatar-xl circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-l circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-md circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-sm circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-xs circular-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Sqaure Avatars</strong></div>
-                    <div class="variation-desc">The <strong>avatar</strong> component is typically used to display
-                        square user profile pictures. It is typically available in 5 sizes: avatar-xl(5rem),
-                        avatar-large(4rem), avatar-md(3rem), avatar-small(2rem), avatar-xs(1.5rem).</div>
-                    <div class="variation-component align-center-item">
-                        <div class="avatar-rounded-container">
-                            <img class="avatar-xl rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-large rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-md rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-small rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-                            <img class="avatar-xs rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
+                    <div class="variation-title black-text mt-2 mb-2"><strong>Sqaure Avatars</strong></div>
+                    <div class="variation-desc mb-2">Square avatar component is used to display profile pictures or
+                        initials in square containers. <br>Use the base class <code>square-avatar</code> to generate a
+                        circular avatar. Oxygen provides 5 sizes namely: avatar-xl (5rem), avatar-l (4rem), avatar-md
+                        (3rem), avatar-s (2rem) and avatar-xs (1rem). <br>Use the class <code>avatar-xl | avatar-l |
+                            avatar-md | avatar-s | avatar-xs</code> respectively to get the appropriate size in your
+                        project..</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="avatar-container flex-row">
+                            <img class="avatar-xl square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-l square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-md square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-sm square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+                            <img class="avatar-xs square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="avatar-rounded-container">
-    &ltimg class="avatar-xl rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-large rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-md rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-small rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
-    &ltimg class="avatar-xs rounded-avatar" src="https://picsum.photos/200" alt="avatar-img">
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="avatar-container flex-row">
+    &ltimg class="avatar-xl square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-l square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-md square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">			
+    &ltimg class="avatar-sm square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
+    &ltimg class="avatar-xs square-avatar m-1" src="https://picsum.photos/200" alt="avatar-img">
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Avatars with Status</strong></div>
-                    <div class="variation-desc">The <strong>avatar</strong> component is typically used to display
-                        square/circle user profile pictures along with status indicators. There are typically 3 status
-                        indicators: online, offline and busy.</div>
-                    <div class="variation-component align-center-item container">
-                        <div class="avatar">
-                            <div class="avatar-xl-status">
+                    <div class="variation-title black-text mt-2 mb-2"><strong>Avatars with Status</strong></div>
+                    <div class="variation-desc mb-2">Avatar with a status essentially displays profile pictures or
+                        initials along with their status. <br>Use the base class <code>avatar-status</code> to generate
+                        a
+                        simple status without any color. Oxygen provides 3 status types namely: online, busy and
+                        offline.<br>Use the class <code>status-online | status-busy | status-offline
+                        </code> respectively to get the appropriate status in your
+                        project.</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="avatar-container flex-row">
+                            <div class="avatar-status-container m-1">
                                 <img class="circular-avatar avatar-xl" src="https://picsum.photos/200" alt="avatar">
                                 <span class="avatar-status status-online status-position-xl"></span>
                             </div>
 
-                            <div class="avatar-large-status">
-                                <img class="circular-avatar avatar-large" src="https://picsum.photos/200" alt="avatar">
-                                <span class="avatar-status status-busy status-position-large"></span>
+                            <div class="avatar-status-container m-1">
+                                <img class="circular-avatar avatar-l" src="https://picsum.photos/200" alt="avatar">
+                                <span class="avatar-status status-busy status-position-l"></span>
                             </div>
 
-                            <div class="avatar-md-status">
+                            <div class="avatar-status-container m-1">
                                 <img class="circular-avatar avatar-md" src="https://picsum.photos/200" alt="avatar">
                                 <span class="avatar-status status-offline status-position-md"></span>
                             </div>
 
-                            <div class="avatar-small-status">
-                                <img class="circular-avatar avatar-small" src="https://picsum.photos/200" alt="avatar">
-                                <span class="avatar-status status-busy status-position-small"></span>
+                            <div class="avatar-status-container m-1">
+                                <img class="circular-avatar avatar-sm" src="https://picsum.photos/200" alt="avatar">
+                                <span class="avatar-status status-busy status-position-sm"></span>
                             </div>
 
-                            <div class="avatar-small-status">
+                            <div class="avatar-status-container m-1">
                                 <img class="circular-avatar avatar-xs" src="https://picsum.photos/200" alt="avatar">
                                 <span class="avatar-status status-online status-position-xs"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="avatar container">
-    &ltdiv class="avatar-xl-status">
+                    <div class="variation-comp-code align-self-center container">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="avatar-container flex-row">
+    &ltdiv class="avatar-status-container m-1">
         &ltimg class="circular-avatar avatar-xl" src="https://picsum.photos/200" alt="avatar">
         &ltspan class="avatar-status status-online status-position-xl">&lt/span>
     &lt/div>
-    &ltdiv class="avatar-large-status">
-        &ltimg class="circular-avatar avatar-large" src="https://picsum.photos/200" alt="avatar">
-        &ltspan class="avatar-status status-busy status-position-large">&lt/span>
-    &lt/div>
-    &ltdiv class="avatar-md-status">
+    &ltdiv class="avatar-status-container m-1">
+        &ltimg class="circular-avatar avatar-l" src="https://picsum.photos/200" alt="avatar">
+        &ltspan class="avatar-status status-busy status-position-l">&lt/span>
+    &lt/div>                    
+    &ltdiv class="avatar-status-container m-1">
         &ltimg class="circular-avatar avatar-md" src="https://picsum.photos/200" alt="avatar">
         &ltspan class="avatar-status status-offline status-position-md">&lt/span>
-    &lt/div>
-    &ltdiv class="avatar-small-status">
-        &ltimg class="circular-avatar avatar-small" src="https://picsum.photos/200" alt="avatar">
-        &ltspan class="avatar-status status-busy status-position-small">&lt/span>
-    &lt/div>
-    &ltdiv class="avatar-small-status">
+    &lt/div>                    
+    &ltdiv class="avatar-status-container m-1">
+        &ltimg class="circular-avatar avatar-sm" src="https://picsum.photos/200" alt="avatar">
+        &ltspan class="avatar-status status-busy status-position-sm">&lt/span>
+    &lt/div>                    
+    &ltdiv class="avatar-status-container m-1">
         &ltimg class="circular-avatar avatar-xs" src="https://picsum.photos/200" alt="avatar">
         &ltspan class="avatar-status status-online status-position-xs">&lt/span>
     &lt/div>
@@ -166,9 +183,9 @@
                 </li>
             </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom">
-                <a class="button secondary-button-outlined" href="/Documentation/pages/text-cb.html">
-                    << Typography</a> <a class="button secondary-button-outlined" href="/Documentation/pages/badge-cb.html">Badge >>
+            <footer class="footer-buttons flex-row mb-2 justify-content-between">
+                <a class="button gray-text" href="/Documentation/pages/text-cb.html">
+                    << Typography</a> <a class="button gray-text" href="/Documentation/pages/badge-cb.html">Badge >>
                 </a>
             </footer>
         </div>

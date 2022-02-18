@@ -2,329 +2,430 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Listing</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Listing</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-    <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
+  <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+    <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
     <div class="nav-buttons flex-row">
-        <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-        <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-        <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
+      <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
+          class="fab fa-github"></i></a>
+      <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i
+          class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i
+          class="fab fa-linkedin-in"></i></a>
     </div>
-</nav>
+  </nav>
 
-    <div class="main flex-row">
-        <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
-                </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
-                <li class="list-item"><a href="/Documentation/pages/text-cb.html" class="button secondary-button-outlined">Typography</a></li>
-            </ul>
-            <ul class="list-title margin align-center-item">Components
-              <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
-              <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
-              <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
-              <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button secondary-button-outlined">Buttons</a></li>
-              <li class="list-item"><a href="#" class="button secondary-button-outlined">Card</a></li>
-              <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
-              <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button secondary-button-outlined">Images</a></li>
-              <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
-              <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
-          </ul>
-        </div>
+  <div class="main-container flex-row">
+    <div class="sidebar flex-column ml-2">
+      <ul class="list-title flex-column">Getting Started
+        <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
+        </li>
+        <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
+        <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a></li>
+      </ul>
+      <ul class="list-title flex-column">Components
+        <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
+        <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button">Badge</a></li>
+        <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button">Alert</a></li>
+        <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button">Buttons</a></li>
+        <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button">Card</a></li>
+        <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button">Input</a></li>
+        <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button">Images</a></li>
+        <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button">Lists</a></li>
+        <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button">Navigation Bar</a></li>
+      </ul>
+    </div>
 
-        <div class="main-content flex-column margin-right">
-            <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom">CARDS</div>
-                <pre class="align-center-item margin-bottom"><code class="">
+    <div class="main-content flex-column mr-2">
+      <div class="main-comp-title flex-column">
+        <div class="main-content-title mb-2">CARDS</div>
+        <div class="variation-desc mb-2">Cards groups and displays information related to a product, category or service
+          using components like text, images, badges, etc to grab the user's attention.<br> Oxygen provides a range of
+          cards namely: <code>Card with Badges | Product Card with Badge | Cards with Dismiss | Cards with Text Overlay
+            | Text only Card | Horizontal Card</code><br> To use these cards in your project
+          import the below stylesheet.</div>
+        <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/card/card.css")
                 </code></pre>
+      </div>
+
+      <ul class="main-comp-variations mb-2 flex-column">
+        <li class="comp-variations flex-column">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with badges</strong></div>
+          <div class="variation-desc mb-2">This is a basic vertical card with an image, heading, content and badges.
+          </div>
+          <div class="variation-component align-self-center mb-2">
+            <div class="card-container box-shadow flex-column mb-2">
+              <div class="card-image-container mb-2">
+                <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
+              </div>
+              <div class="card-heading mb-2 ml-2">Mountain</div>
+              <div class="card-content mb-2 p-2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s.
+              </div>
+              <div class="card-badges flex-row justify-content-even">
+                <span class="card-badge mb-2">#Photography</span>
+                <span class="card-badge mb-2">#Travel</span>
+                <span class="card-badge mb-2">#Nature</span>
+              </div>
             </div>
+          </div>
+          <div class="variation-comp-code align-self-center container mb-2">
+            <pre class="mb-2"><code class="language-html">
+&ltdiv class="card-container box-shadow flex-column mb-2">
+  &ltdiv class="card-image-container mb-2">
+    &ltimg class="card-image" src="https://picsum.photos/320/200" alt="image" />
+  &lt/div>
+  &ltdiv class="card-heading mb-2 ml-2">Mountain&lt/div>
+  &ltdiv class="card-content mb-2 p-2">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s.
+  &lt/div>
+  &ltdiv class="card-badges flex-row justify-content-even">
+    &ltspan class="card-badge mb-2">#Photography&lt/span>
+    &ltspan class="card-badge mb-2">#Travel&lt/span>
+    &ltspan class="card-badge mb-2">#Nature&lt/span>
+  &lt/div>
+&lt/div>
+                        </code></pre>
+          </div>
+        </li>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Cards with badges</strong></div>
-                    <div class="variation-desc">This component is used to display information in vertical cards.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow flex-column">
-                            <div class="card-image margin-bottom">
-                            <img class="image" src="https://picsum.photos/320/200" alt="image" />
-                          </div>
-                          <div class="heading margin-bottom">
-                            <strong class="card-heading padding">Mountain</strong>
-                          </div>
-                          <div class="card-content margin-bottom padding">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                          </div>
-                          <div class="card-badges">
-                            <span class="badge margin-bottom">#Photography</span>
-                            <span class="badge margin-bottom">#Travel</span>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-image margin-bottom flex-column">
-    &ltdiv class="card-container box-shadow">
-    &ltimg class="image" src="https://picsum.photos/320/200" alt="image" />
+        <li class="comp-variations flex-column">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with product</strong></div>
+          <div class="variation-desc mb-2">This is a vertical card with an image, heading, price details, rating,
+            buttons and a badge.</div>
+          <div class="variation-component align-self-center mb-2">
+            <div class="card-container box-shadow flex-column mb-2 container">
+              <div class="card-image-container">
+                <img class="card-image" src="https://pulse-fragrances.netlify.app/images/perfume.jpg" alt="image" />
+              </div>
+              <div class="card-content-container flex-column">
+                <div class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette</div>
+                <div class="card-price flex-row">
+                  <div class="price-currency mr-1">MRP: </div>
+                  <div class="price-value mr-1"><strike>₹4600</strike></div>
+                  <div class="price-dis-value">₹4140</div>
+                </div>
+                <div class="card-rating flex-row">
+                  <div class="card-rating-value">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="card-rating-desc ml-2"> ( 4.6 ) </div>
+                </div>
+                <div class="card-button flex-row container">
+                  <button class="card-button card-wishlist align-self-center"><i class="far fa-heart mr-1"></i></button>
+                  <button class="card-button card-cart align-self-center">Add To Cart</button>
+                </div>
+              </div>
+              <div class="card-badge-top">10% OFF</div>
+            </div>
+          </div>
+          <div class="variation-comp-code align-self-center container mb-2">
+            <pre class="mb-2"><code class="language-html">
+&ltdiv class="card-container box-shadow flex-column mb-2">
+  &ltdiv class="card-image-container">
+    &ltimg class="card-image" src="https://pulse-fragrances.netlify.app/images/perfume.jpg" alt="image" />
   &lt/div>
-  &ltdiv class="heading margin-bottom">
-    &ltstrong class="card-heading padding">Mountain&lt/strong>
+  &ltdiv class="card-content-container flex-column">
+    &ltdiv class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette&lt/div>
+    &ltdiv class="card-price flex-row">
+      &ltdiv class="price-currency mr-1">MRP: &lt/div>
+      &ltdiv class="price-value mr-1">&ltstrike>₹4600&lt/strike>&lt/div>
+      &ltdiv class="price-dis-value">₹4140&lt/div>
+    &lt/div>
+    &ltdiv class="card-rating flex-row">
+      &ltdiv class="card-rating-value">
+        &lti class="fas fa-star">&lt/i>
+        &lti class="fas fa-star">&lt/i>
+        &lti class="fas fa-star">&lt/i>
+        &lti class="fas fa-star">&lt/i>
+        &lti class="fas fa-star-half-alt">&lt/i>
+      &lt/div>
+      &ltdiv class="card-rating-desc ml-2"> ( 4.6 ) &lt/div>
+    &lt/div>
+    &ltdiv class="card-button flex-row container">
+      &ltbutton class="card-button card-wishlist align-self-center">&lti class="far fa-heart mr-1">&lt/i>&lt/button>
+      &ltbutton class="card-button card-cart align-self-center">Add To Cart&lt/button>
+    &lt/div>
   &lt/div>
-  &ltdiv class="card-content margin-bottom padding">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-  &lt/div>
-  &ltdiv class="card-badges">
-    &ltspan class="badge margin-bottom">#Photography&lt/span>
-    &ltspan class="badge margin-bottom">#Travel&lt/span>
-  &lt/div>
+  &ltdiv class="card-badge-top">10% OFF&lt/div>
 &lt/div>
                         </code></pre>
-                    </div>
-                </li>
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Cards with Dismiss</strong></div>
-                    <div class="variation-desc">The component is used to display information in vertical cards with a
-                        close icon.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow flex-column">
-                            <div class="card-image margin-bottom">
-                                <img class="image" src="https://picsum.photos/320/200" alt="image" />
-                                <img class="close-icon" src="/Components/card/close_black.svg" alt="Icon">
-                            </div>
+          </div>
+        </li>
 
-                            <div class="card-content-container margin-bottom padding-sm">
-                                <div class="heading font-black"><strong>Changing Planet</strong></div>
-                                <div class="sub-heading margin-bottom">By Kurt Wagnar</div>
-                                <div class="card-content">
-                                    Visit 10 places on our planet that are undergoing the biggest changes
-                                    today.
-                                </div>
-                            </div>
-                            <div class="footer flex-row">
-                                <button>READ</button>
-                                <button>BOOKMARK</button>
-                                <button class="img-btn">
-                                    <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
-                                </button>
-                                <button class="img-btn">
-                                    <img src="https://img.icons8.com/material-outlined/24/000000/share.png" />
-                                </button>
-                                <button class="img-btn">
-                                    <img src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-container box-shadow flex-column">
-    &ltdiv class="card-image margin-bottom">
-      &ltimg class="image" src="https://picsum.photos/320/200" alt="image" />
-      &ltimg class="close-icon" src="close_black.svg" alt="Icon">
-    &lt/div>
+        <li class="comp-variations flex-column">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with Dismiss</strong></div>
+          <div class="variation-desc mb-2">This is a vertical card with an image, heading, sub-heading, content, buttons
+            and a close icon.</div>
+          <div class="variation-component align-self-center mb-2">
+            <div class="card-container box-shadow flex-column mb-2">
+              <div class="card-image-container mb-2">
+                <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
+                <i class="close-icon fas fa-times"></i>
+              </div>
 
-    &ltdiv class="card-content-container margin-bottom padding-sm">
-      &ltdiv class="heading margin-bottom-sm">&ltstrong>Changing Planet&lt/strong>&lt/div>
-      &ltdiv class="sub-heading margin-bottom">By Kurt Wagnar&lt/div>
-      &ltdiv class="card-content">
-        Visit 10 places on our planet that are undergoing the biggest changes
-        today.
-      &lt/div>
+              <div class="card-content-container mb-2 m-2 ml-2">
+                <div class="card-heading mb-1"><strong>Changing Planet</strong></div>
+                <div class="sub-heading mb-2">By Kurt Wagnar</div>
+                <div class="card-content">
+                  Visit 10 places on our planet that are undergoing the biggest changes
+                  today.
+                </div>
+              </div>
+              <div class="footer flex-row">
+                <button class="card-button">READ</button>
+                <button class="card-button">BOOKMARK</button>
+                <button class="card-button img-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button img-btn">
+                  <i class="fas fa-share-alt"></i>
+                </button>
+                <button class="card-button img-btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="variation-comp-code align-self-center container mb-2">
+            <pre class="mb-2"><code class="language-html">
+&ltdiv class="card-container box-shadow flex-column mb-2">
+  &ltdiv class="card-image-container mb-2">
+    &ltimg class="card-image" src="https://picsum.photos/320/200" alt="image" />
+    &lti class="close-icon fas fa-times">&lt/i>
+  &lt/div>
+  &ltdiv class="card-content-container mb-2 m-2 ml-2">
+    &ltdiv class="card-heading mb-1">&ltstrong>Changing Planet&lt/strong>&lt/div>
+    &ltdiv class="sub-heading mb-2">By Kurt Wagnar&lt/div>
+    &ltdiv class="card-content">
+      Visit 10 places on our planet that are undergoing the biggest changes
+      today.
     &lt/div>
-    &ltdiv class="footer flex-row">
-      &ltbutton>READ&lt/button>
-      &ltbutton>BOOKMARK&lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
-      &lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/material-outlined/24/000000/share.png"/>
-      &lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" />
-      &lt/button>
-    &lt/div>
+  &lt/div>
+  &ltdiv class="footer flex-row">
+    &ltbutton class="card-button">READ&lt/button>
+    &ltbutton class="card-button">BOOKMARK&lt/button>
+    &ltbutton class="card-button img-btn">
+      &lti class="far fa-heart">&lt/i>
+    &lt/button>
+    &ltbutton class="card-button img-btn">
+      &lti class="fas fa-share-alt">&lt/i>
+    &lt/button>
+    &ltbutton class="card-button img-btn">
+      &lti class="fas fa-ellipsis-v">&lt/i>
+    &lt/button>
+  &lt/div>
 &lt/div>
                         </code></pre>
-                    </div>
-                </li>
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Cards with Text Overlay</strong></div>
-                    <div class="variation-desc">The component is used to display information in vertical cards with text
-                        overlay.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow flex-column">
-                            <div class="card-image margin-bottom">
-                                <img class="image" src="https://picsum.photos/320/200" alt="image" />
-                            </div>
-                            <div class="card-content-container padding-sm">
-                                <div class="info-heading margin-bottom">
-                                    <div class="heading font-black"><strong>Our Changing Planet</strong></div>
-                                    <div class="sub-heading font-black">By Kurt Wagnar</div>
-                                </div>
-                                <div class="card-content margin-bottom">
-                                    Visit 10 places on our planet that are undergoing the biggest changes
-                                    today.
-                                </div>
-                            </div>
-                            <div class="footer flex-row">
-                                <button>READ</button>
-                                <button>BOOKMARK</button>
-                                <button class="img-btn">
-                                    <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
-                                </button>
-                                <button class="img-btn">
-                                    <img src="https://img.icons8.com/material-outlined/24/000000/share.png" />
-                                </button>
-                                <button class="img-btn">
-                                    <img src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-container box-shadow flex-column">
-    &ltdiv class="card-image margin-bottom">
-      &ltimg class="image" src="https://picsum.photos/320/200" alt="image" />
+          </div>
+        </li>
+
+        <li class="comp-variations flex-column">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Cards with Text Overlay</strong></div>
+          <div class="variation-desc mb-2">This card contains an overlay text that is used to display an important
+            information to the user.</div>
+          <div class="variation-component align-self-center mb-2">
+            <div class="card-container box-shadow flex-column mb-2">
+              <div class="card-image-container mb-2 text-overlay">
+                <img class="card-image" src="https://picsum.photos/320/200" alt="image" />
+              </div>
+              <div class="overlay-text">OUT OF STOCK</div>
+              <div class="card-content-container p-2 text-overlay">
+                <div class="heading-container mb-2">
+                  <div class="card-heading">Our Changing Planet</div>
+                  <div class="sub-heading">By Kurt Wagnar</div>
+                </div>
+                <div class="card-content mb-2">
+                  Visit 10 places on our planet that are undergoing the biggest changes
+                  today.
+                </div>
+              </div>
+              <div class="footer flex-row text-overlay">
+                <button class="card-button">READ</button>
+                <button class="card-button">BOOKMARK</button>
+                <button class="card-button img-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button class="card-button img-btn">
+                  <i class="fas fa-share-alt"></i>
+                </button>
+                <button class="card-button img-btn">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="variation-comp-code align-self-center container mb-2">
+            <pre class="mb-2"><code class="language-html">
+&ltdiv class="card-container box-shadow flex-column mb-2">
+  &ltdiv class="card-image-container mb-2 text-overlay">
+    &ltimg class="card-image" src="https://picsum.photos/320/200" alt="image" />
+  &lt/div>
+  &ltdiv class="overlay-text">OUT OF STOCK&lt/div>
+  &ltdiv class="card-content-container p-2 text-overlay">
+    &ltdiv class="heading-container mb-2">
+      &ltdiv class="card-heading">Our Changing Planet&lt/div>
+      &ltdiv class="sub-heading">By Kurt Wagnar&lt/div>
     &lt/div>
-    &ltdiv class="card-content-container padding-sm">
-      &ltdiv class="info-heading margin-bottom">
-        &ltdiv class="heading">&ltstrong>Our Changing Planet&lt/strong>&lt/div>
-        &ltdiv class="sub-heading">By Kurt Wagnar&lt/div>
-      &lt/div>
-      &ltdiv class="card-content margin-bottom">
-        Visit 10 places on our planet that are undergoing the biggest changes
-        today.
-      &lt/div>
+    &ltdiv class="card-content mb-2">
+      Visit 10 places on our planet that are undergoing the biggest changes
+      today.
     &lt/div>
-    &ltdiv class="footer flex-row">
-      &ltbutton>READ&lt/button>
-      &ltbutton>BOOKMARK&lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
-      &lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/material-outlined/24/000000/share.png" />
-      &lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" />
-      &lt/button>
-    &lt/div>
+  &lt/div>
+  &ltdiv class="footer flex-row text-overlay">
+    &ltbutton class="card-button">READ&lt/button>
+    &ltbutton class="card-button">BOOKMARK&lt/button>
+    &ltbutton class="card-button img-btn">
+      &lti class="far fa-heart">&lt/i>
+    &lt/button>
+    &ltbutton class="card-button img-btn">
+      &lti class="fas fa-share-alt">&lt/i>
+    &lt/button>
+    &ltbutton class="card-button img-btn">
+      &lti class="fas fa-ellipsis-v">&lt/i>
+    &lt/button>
+  &lt/div>
 &lt/div>
                         </code></pre>
-                    </div>
-                </li>
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Text only Cards</strong></div>
-                    <div class="variation-desc">The component is used to display information in vertical cards.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow flex-column">
-                            <div class="heading margin-bottom margin-top">
-                                <strong class="card-heading padding">Mountain</strong>
-                            </div>
-                            <div class="card-content margin-bottom padding">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="card-container box-shadow flex-column">
-    &ltdiv class="heading margin-bottom margin-top">
-      &ltstrong class="card-heading padding">Mountain&lt/strong>
-    &lt/div>
-    &ltdiv class="card-content margin-bottom padding">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-    &lt/div>
+          </div>
+        </li>
+
+        <li class="comp-variations flex-column">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Text only Cards</strong></div>
+          <div class="variation-desc mb-2">This is a vertical card with only heading and text.</div>
+          <div class="variation-component align-self-center mb-2">
+            <div class="card-container box-shadow flex-column mb-2">
+              <div class="card-heading-container mb-2 mt-2">
+                <div class="card-heading p-2">Mountain</div>
+              </div>
+              <div class="card-content mb-2 p-2">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's
+                standard dummy text ever since the 1500s.
+              </div>
+            </div>
+          </div>
+          <div class="variation-comp-code container mb-2">
+            <pre class="mb-2"><code class="language-html">
+&ltdiv class="card-container box-shadow flex-column mb-2">
+  &ltdiv class="card-heading-container mb-2 mt-2">
+    &ltdiv class="card-heading p-2">Mountain&lt/div>
+  &lt/div>
+  &ltdiv class="card-content mb-2 p-2">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s.
+  &lt/div>
 &lt/div>
                         </code></pre>
+          </div>
+        </li>
+        <li class="comp-variations flex-column">
+          <div class="variation-title black-text mb-2 mt-2"><strong>Horizontal Card</strong></div>
+          <div class="variation-desc mb-2">This card contains an image, product details and a couple of buttons.</div>
+          <div class="variation-component">
+            <div class="card-container box-shadow horizontal-card justify-self-center mb-2">
+              <div class="card-header flex-row mb-2 mt-2">
+                <div class="card-image-container p-1">
+                  <img class="card-image image-no-border" src="https://pulse-fragrances.netlify.app/images/perfume.jpg"
+                    alt="image">
+                </div>
+                <div class="card-content-container p-2 flex-column justify-content-between">
+                  <div class="card-heading-container">
+                    <div class="card-heading">Versace Pour Homme Eau De Toilette(100ml)
                     </div>
-                </li>
-                <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Horizontal Card</strong></div>
-                    <div class="variation-desc">The component is used to display information in horizontal cards.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="card-container box-shadow horizontal-card flex-column">
-                            <div class="header flex-row margin-bottom margin-top">
-                                <div class="card-image padding-sm align-center-item">
-                                    <img class="image-no-border" src="https://picsum.photos/100/100" alt="image">
-                                </div>
-                                <div class="info padding">
-                                    <div class="heading margin-bottom-sm"><strong>Our Changing Planet</strong></div>
-                                    <div class="card-content">Visit 10 places on our planet that are undergoing the
-                                        biggest changes today.</div>
-                                </div>
-                            </div>
-                            <div class="footer flex-row">
-                                <button class="btn">READ</button>
-                                <button class="btn">BOOKMARK</button>
-                                <button class="img-btn"><img
-                                        src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" /></button>
-                                <button class="img-btn"><img
-                                        src="https://img.icons8.com/material-outlined/24/000000/share.png" /></button>
-                                <button class="img-btn"><img
-                                        src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png" /></button>
-                            </div>
+                    <div class="card-content justify-content-between">
+                      <div class="card-rating flex-row gap">
+                        <div class="card-rating-value">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
                         </div>
+                        <div class="card-rating-number">4.3 / 5</div>
+                      </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
+                  </div>
+
+                  <div class="card-footer flex-row justify-content-between container">
+                    <div class="card-qty flex-row">
+                      <div class="card-qty-content align-self-center">Quantity: 1</div>
+                      <div class="card-qty-icon align-self-center"><i class="fas fa-angle-down"></i></div>
+                    </div>
+                    <div class="card-button card-wishlish">MOVE TO WISHLIST</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="variation-comp-code container mb-2">
+              <pre class="mb-2"><code class="language-html">
 &ltdiv class="card-container box-shadow horizontal-card">
-    &ltdiv class="header flex-row margin-bottom margin-top">
-      &ltdiv class="card-image padding-sm">
-        &ltimg class="image-no-border" src="https://picsum.photos/100/100" alt="image">
+  &ltdiv class="card-header flex-row mb-2 mt-2">
+      &ltdiv class="card-image-container p-1">
+          &ltimg class="card-image image-no-border" src="https://pulse-fragrances.netlify.app/images/perfume.jpg" alt="image">
       &lt/div>
-      &ltdiv class="info padding">
-        &ltdiv class="heading margin-bottom-sm">&ltstrong>Our Changing Planet&lt/strong>&lt/div>
-        &ltdiv class="card-content">Visit 10 places on our planet that are undergoing the biggest changes today.&lt/div>
-      &lt/div>
-    &lt/div>
-    &ltdiv class="footer">
-      &ltbutton class="btn">READ&lt/button>
-      &ltbutton class="btn">BOOKMARK&lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"/>
-      &lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/material-outlined/24/000000/share.png"/>
-      &lt/button>
-      &ltbutton class="img-btn">
-        &ltimg src="https://img.icons8.com/ios-glyphs/24/000000/menu-2.png"/>
-      &lt/button>
-    &lt/div>
+      &ltdiv class="card-content-container p-2 flex-column justify-content-between">
+          &ltdiv class="card-heading-container">
+              &ltdiv class="card-heading">Versace Pour Homme Eau De Toilette(100ml)
+              &lt/div>
+              &ltdiv class="card-content justify-content-between">
+                  &ltdiv class="card-rating flex-row gap">
+                      &ltdiv class="card-rating-value">
+                          &lti class="fas fa-star">&lt/i>
+                          &lti class="fas fa-star">&lt/i>
+                          &lti class="fas fa-star">&lt/i>
+                          &lti class="fas fa-star">&lt/i>
+                          &lti class="fas fa-star-half-alt">&lt/i>
+                      &lt/div>
+                      &ltdiv class="card-rating-number">4.3 / 5&lt/div>
+                  &lt/div>    
+              &lt/div>
+          &lt/div>                                  
+          &ltdiv class="card-footer flex-row justify-content-between container">
+              &ltdiv class="card-qty flex-row">
+                  &ltdiv class="card-qty-content align-self-center">Quantity: 1&lt/div>
+                  &ltdiv class="card-qty-icon align-self-center">&lti class="fas fa-angle-down">&lt/i>&lt/div>
+              &lt/div>
+              &ltdiv class="card-button card-wishlish secondary-button">MOVE TO WISHLIST&lt/div>
+          &lt/div>
+      &lt/div>    
+  &lt/div>
 &lt/div>
                         </code></pre>
-                    </div>
-                </li>
+            </div>
+        </li>
 
 
-            </ul>
+      </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom space-between">
-                <a class="button secondary-button-outlined" href="/Documentation/pages/button-cb.html">
-                    << Button</a> <a class="button secondary-button-outlined" href="/Documentation/pages/images-cb.html">Images >>
-                </a>
-            </footer>
-        </div>
+      <footer class="footer-buttons flex-row mb-2 justify-content-between">
+        <a class="button gray-text" href="/Documentation/pages/button-cb.html">
+          << Button</a> <a class="button gray-text" href="/Documentation/pages/images-cb.html">Images >>
+        </a>
+      </footer>
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
 
 </body>
 

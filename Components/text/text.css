@@ -1,24 +1,32 @@
-.h1 {
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url('/Components/color-palette.css');
+
+body {
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading-1 {
     font-size: 3.5rem;
 }
 
-.h2 {
+.heading-2 {
     font-size: 3rem;
 }
 
-.h3 {
+.heading-3 {
     font-size: 2.5rem;
 }
 
-.h4 {
+.heading-4 {
     font-size: 2rem;
 }
 
-.h5 {
+.heading-5 {
     font-size: 1.5rem;
 }
 
-.h6 {
+.heading-6 {
     font-size: 1rem;
 }
 

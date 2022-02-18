@@ -1,4 +1,5 @@
-@import url("/Components/utility.css");
+@import url("https://utility-component.netlify.app/utility.css");
+@import url("/Components/color-palette.css");
 @import url("/Components/text/text.css");
 @import url("/Components/alert/alert.css");
 @import url("/Components/avatar/avatar.css");
@@ -8,10 +9,8 @@
 @import url("/Components/images/images.css");
 @import url("/Components/input/input.css");
 @import url("/Components/list/list.css");
-@import url("/Components/nav/nav.html");
+@import url("/Components/nav/nav.css");
 @import url("/Documentation/styles/color-cb.css");
-@import url("/Documentation/styles/alert-cb.css");
-@import url("/Documentation/styles/avatar-cb.css");
 @import url("/Documentation/styles/badge-cb.css");
 @import url("/Documentation/styles/index.css");
 @import url("/Documentation/styles/responsive.css");

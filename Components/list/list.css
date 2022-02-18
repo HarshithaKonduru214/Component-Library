@@ -1,4 +1,10 @@
-@import url("/Components/color-palette.css");
+@import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url('/Components/color-palette.css');
+
+body {
+  font-family: 'Murecho', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 
 .list-heading {
     line-height: 1.5rem;

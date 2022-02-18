@@ -7,137 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
+
 
 <body>
-    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-        <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
-            <div class="nav-buttons flex-row">
-                <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                        src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-                <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                        src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-                <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                        src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
-            </div>
-    </nav>
+    <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+		<a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
+		<div class="nav-buttons flex-row">
+			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
+			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+	</nav>
 
-    <div class="main flex-row">
-        <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html"
-                        class="button secondary-button-outlined">Introduction</a>
+    <div class="main-container flex-row">
+        <div class="sidebar flex-column ml-2">
+            <ul class="list-title flex-column">Getting Started
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html" class="button">Introduction</a>
                 </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html"
-                        class="button secondary-button-outlined">Colors</a></li>
-                <li class="list-item"><a href="#" class="button secondary-button-outlined">Typography</a></li>
+                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a></li>
             </ul>
-            <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html"
-                        class="button secondary-button-outlined">Avatar</a></li>
-                <li class="list-item"><a href="/Documentation/pages/badge-cb.html"
-                        class="button secondary-button-outlined">Badge</a></li>
-                <li class="list-item"><a href="/Documentation/pages/alert-cb.html"
-                        class="button secondary-button-outlined">Alert</a></li>
-                <li class="list-item"><a href="/Documentation/pages/button-cb.html"
-                        class="button secondary-button-outlined">Buttons</a></li>
-                <li class="list-item"><a href="/Documentation/pages/card-cb.html"
-                        class="button secondary-button-outlined">Card</a></li>
-                <li class="list-item"><a href="/Documentation/pages/input-cb.html"
-                        class="button secondary-button-outlined">Input</a></li>
-                <li class="list-item"><a href="/Documentation/pages/images-cb.html"
-                        class="button secondary-button-outlined">Images</a></li>
-                <li class="list-item"><a href="/Documentation/pages/lists-cb.html"
-                        class="button secondary-button-outlined">Lists</a></li>
-                <li class="list-item"><a href="/Documentation/pages/nav-cb.html"
-                        class="button secondary-button-outlined">Navigation Bar</a></li>
+            <ul class="list-title flex-column">Components
+                <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button">Navigation Bar</a></li>
             </ul>
         </div>
 
-        <div class="main-content flex-column margin-right">
+        <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom">TYPOGRAPHY</div>
-                <div class="main-content-desc margin-bottom">Typography is the style or appearance of text. It can also refer to the
+                <div class="main-content-title mb-2">TYPOGRAPHY</div>
+                <div class="variation-desc mb-2">Typography is the style or appearance of text. It can also refer to the
                     art of working with text something you probably do all the time. To import the entire component into
-                    your project import the below stylesheet into your project.<br>Default font family: "Arial".
+                    your project import the below stylesheet into your project.<br>Default font family: "Roboto".
                 </div>
-                <pre class="align-center-item margin-bottom"><code class="">
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/text/text.css");
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Headings</strong></div>
-                    <div class="variation-desc margin-bottom">Oxygen UI provides 6 levels of headings which can be used
-                        for the titles or sub-titles. Use the classname <code>h1</code> (3.5rem), <code>h2</code>
-                        (3rem), <code>h3</code> (2.5rem), <code>h4</code> (2rem), <code>h5</code> (1.5rem) and
-                        <code>h6</code> (1rem).</div>
-                    <div class="variation-component align-center-item margin-bottom">
-                        <div class="text-heading box-shadow padding">
-                            <h1 class="h1 padding">Component</h1>
-                            <h2 class="h2 padding">Component</h2>
-                            <h3 class="h3 padding">Component</h3>
-                            <h4 class="h4 padding">Component</h4>
-                            <h5 class="h5 padding">Component</h5>
-                            <h6 class="h6 padding">Component</h6>
+                    <div class="variation-title mb-2 mt-2"><strong>Headings</strong></div>
+                    <div class="variation-desc mb-2">Oxygen UI provides 6 levels of headings which can be used
+                        for the titles or sub-titles. Use the classname <code>heading-1</code> (3.5rem), <code>heading-2</code>
+                        (3rem), <code>heading-3</code> (2.5rem), <code>heading-4</code> (2rem), <code>heading-5</code> (1.5rem) and
+                        <code>heading-6</code> (1rem).</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="text-heading p-2">
+                            <h1 class="heading-1">Component</h1>
+                            <h2 class="heading-2">Component</h2>
+                            <h3 class="heading-3">Component</h3>
+                            <h4 class="heading-4">Component</h4>
+                            <h5 class="heading-5">Component</h5>
+                            <h6 class="heading-6">Component</h6>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="text-heading box-shadow padding">
-    &lth1 class="h1">Component Library&lt/h1>
-    &lth2 class="h2">Component Library&lt/h2>
-    &lth3 class="h3">Component Library&lt/h3>
-    &lth4 class="h4">Component Library&lt/h4>
-    &lth5 class="h5">Component Library&lt/h5>
-    &lth6 class="h6">Component Library&lt/h6>
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="text-heading p-2">
+    &lth1 class="heading-1">Component Library&lt/h1>
+    &lth2 class="heading-2">Component Library&lt/h2>
+    &lth3 class="heading-3">Component Library&lt/h3>
+    &lth4 class="heading-4">Component Library&lt/h4>
+    &lth5 class="heading-5">Component Library&lt/h5>
+    &lth6 class="heading-6">Component Library&lt/h6>
 &lt/div>                
                         </code></pre>
                     </div>
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Gray Text</strong></div>
-                    <div class="variation-desc margin-bottom">This is used to display
+                    <div class="variation-title mb-2 mt-2"><strong>Gray Text</strong></div>
+                    <div class="variation-desc mb-2">This is used to display
                         the information in gray. Use the classname <code>gray-text</code> to get your text in gray.
                     </div>
-                    <div class="variation-component margin-bottom">
-                        <div class="gray-text box-shadow padding">
-                            <p class="text">Component Library</p>
+                    <div class="variation-component mb-2">
+                        <div class="box-shadow p-2">
+                            <p class="gray-text text">Component Library</p>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="gray-text box-shadow padding">
-    &ltp class="text">Component Library&lt/p>
+                    <div class="variation-comp-code container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="box-shadow p-2">
+    &ltp class="gray-text text">Component Library&lt/p>
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Centered Text</strong></div>
-                    <div class="variation-desc margin-bottom">This is used to display the information at the
+                    <div class="variation-title mb-2 mt-2"><strong>Centered Text</strong></div>
+                    <div class="variation-desc mb-2">This is used to display the information at the
                         center of the container. Use the classname <code>centered-text</code> to get your text aligned
                         to the center of the container.</div>
-                    <div class="variation-component box-shadow margin-bottom">
-                        <div class="centered-text padding">
-                            <p class="text">Component Library</p>
+                    <div class="variation-component box-shadow mb-2">
+                        <div class="p-2">
+                            <p class="centered-text text">Component Library</p>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="centered-text box-shadow padding">
-    &ltp class="text">Component Library&lt/p>
+                    <div class="variation-comp-code container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="box-shadow p-2">
+    &ltp class="centered-text text">Component Library&lt/p>
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
             </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom">
-                <a class="button secondary-button-outlined" href="/Documentation/pages/colors-cb.html">
-                    << Colors</a> <a class="button secondary-button-outlined"
+            <footer class="footer-buttons flex-row mb-2 justify-content-between">
+                <a class="button gray-text" href="/Documentation/pages/colors-cb.html">
+                    << Colors</a> <a class="button gray-text"
                         href="/Documentation/pages/avatar-cb.html">Avatar >>
                 </a>
             </footer>

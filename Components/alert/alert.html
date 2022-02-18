@@ -6,39 +6,88 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alerts</title>
-	<link rel="stylesheet" href="/Components/utility.css">
-	<link rel="stylesheet" href="alert.css">
+	<link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
+	<link rel="stylesheet" href="/Components/alert/alert.css">
+	<script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+	<!-- Solid Alerts -->
 	<div class="alert-container">
-		<div class="alert alert-success padding margin-bottom">
-			<strong>Success</strong> - This is a success alert!
+		<div class="alert alert-success p-2 mb-2">
+			Success - This is a success alert!
 		</div>
-		<div class="alert alert-error padding margin-bottom">
-			<strong>Error</strong> - This is an error alert!
+
+		<div class="alert alert-error p-2 mb-2">
+			Error - This is an error alert!
 		</div>
-		<div class="alert alert-primary padding margin-bottom">
-			<strong>Primary</strong> - This is a primary alert!
+
+		<div class="alert alert-primary p-2 mb-2">
+			Primary - This is a primary alert!
 		</div>
-		<div class="alert alert-warning padding margin-bottom">
-			<strong>Warning</strong> - This is a warning alert!
+
+		<div class="alert alert-warning p-2 mb-2">
+			Warning - This is a warning alert!
 		</div>
 	</div>
 
+	<!-- Outlined Alerts -->
 	<div class="alert-container">
-		<div class="alert alert-success-outlined padding margin-bottom">
-			<strong>Success</strong> - This is a success alert!
+
+		<div class="alert alert-success-outlined p-2 mb-2">
+			Success - This is a success alert!
 		</div>
-		<div class="alert alert-error-outlined padding margin-bottom">
-			<strong>Error</strong> - This is an error alert!
+
+		<div class="alert alert-error-outlined p-2 mb-2">
+			Error - This is an error alert!
 		</div>
-		<div class="alert alert-primary-outlined padding margin-bottom">
-			<strong>Primary</strong> - This is a primary alert!
+
+		<div class="alert alert-primary-outlined p-2 mb-2">
+			Primary - This is a primary alert!
 		</div>
-		<div class="alert alert-warning-outlined padding margin-bottom">
-			<strong>Warning</strong> - This is a warning alert!
+
+		<div class="alert alert-warning-outlined p-2 mb-2">
+			Warning - This is a warning alert!
 		</div>
+
+	</div>
+
+	<!-- Alerts with Icons -->
+
+	<div class="alert-container">
+
+		<div class="alert alert-error flex-row p-2 mb-2 justify-content-between">
+			<div class="alert-left flex-row">
+				<i class="mr-1 fas fa-exclamation-circle"></i>
+				<span class= ">This is an error alert.</span>
+			</div>
+			<i class="mr-1 fas fa-times"></i>
+		</div>
+
+		<div class="alert alert-success flex-row p-2 mb-2 justify-content-between">
+			<div class="alert-left flex-row">
+				<i class="mr-1 fas fa-check-circle"></i>
+				<span class="alert-info">This is a success alert.</span>
+			</div>
+			<i class="mr-1 fas fa-times"></i>
+		</div>
+
+		<div class="alert alert-warning flex-row p-2 mb-2 justify-content-between">
+			<div class="alert-left flex-row">
+				<i class="mr-1 fas fa-exclamation-triangle"></i>
+				<span class="alert-info">This is a warning alert.</span>
+			</div>
+			<i class="mr-1 fas fa-times"></i>
+		</div>
+
+		<div class="alert alert-primary flex-row p-2 mb-2 justify-content-between">
+			<div class="alert-left flex-row">
+				<i class="mr-1 fas fa-info-circle"></i>
+				<span class="alert-info">This is an information alert.</span>
+			</div>
+			<i class="mr-1 fas fa-times"></i>
+		</div>
+		
 	</div>
 
 </body>

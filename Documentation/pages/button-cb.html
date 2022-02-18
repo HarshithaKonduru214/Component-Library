@@ -7,118 +7,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Listing</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 
 <body>
-    <nav class="navbar margin-bottom padding-top flex-row box-shadow">
-        <a href="/index.html" class="nav-title align-center-item">OXYGEN UI</div>
+    <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
+        <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
         <div class="nav-buttons flex-row">
-            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/github-brands.svg" alt="icon" /></a>
-            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/twitter-brands.svg" alt="icon" /></a>
-            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon button margin"><img
-                    src="/Documentation/images/linkedin-brands.svg" alt="icon" /></a>
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-linkedin-in"></i></a>
         </div>
     </nav>
 
-    <div class="main flex-row">
-        <div class="sidebar flex-column">
-            <ul class="list-title margin align-center-item">Getting Started
-                <li class="list-item margin-top"><a href="/Documentation/pages/installation.html" class="button secondary-button-outlined">Introduction</a>
+    <div class="main-container flex-row">
+        <div class="sidebar flex-column ml-2">
+            <ul class="list-title flex-column">Getting Started
+                <li class="list-item mt-2"><a href="/Documentation/pages/installation.html"
+                        class="button">Introduction</a>
                 </li>
-                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button secondary-button-outlined">Colors</a></li>
-                <li class="list-item"><a href="/Documentation/pages/text-cb.html" class="button secondary-button-outlined">Typography</a></li>
+                <li class="list-item"><a href="/Documentation/pages/colors-cb.html" class="button">Colors</a></li>
+                <li class="list-item mb-2"><a href="/Documentation/pages/text-cb.html" class="button">Typography</a>
+                </li>
             </ul>
-            <ul class="list-title margin align-center-item">Components
-                <li class="list-item margin-top"><a href="/Documentation/pages/avatar-cb.html" class="button secondary-button-outlined">Avatar</a></li>
-                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button secondary-button-outlined">Badge</a></li>
-                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button secondary-button-outlined">Alert</a></li>
-                <li class="list-item"><a href="#" class="button secondary-button-outlined">Buttons</a></li>
-                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button secondary-button-outlined">Card</a></li>
-                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button secondary-button-outlined">Input</a></li>
-                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button secondary-button-outlined">Images</a></li>
-                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button secondary-button-outlined">Lists</a></li>
-                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button secondary-button-outlined">Navigation Bar</a></li>
+            <ul class="list-title flex-column">Components
+                <li class="list-item mt-2"><a href="/Documentation/pages/avatar-cb.html" class="button">Avatar</a></li>
+                <li class="list-item"><a href="/Documentation/pages/badge-cb.html" class="button">Badge</a></li>
+                <li class="list-item"><a href="/Documentation/pages/alert-cb.html" class="button">Alert</a></li>
+                <li class="list-item"><a href="/Documentation/pages/button-cb.html" class="button">Buttons</a></li>
+                <li class="list-item"><a href="/Documentation/pages/card-cb.html" class="button">Card</a></li>
+                <li class="list-item"><a href="/Documentation/pages/input-cb.html" class="button">Input</a></li>
+                <li class="list-item"><a href="/Documentation/pages/images-cb.html" class="button">Images</a></li>
+                <li class="list-item"><a href="/Documentation/pages/lists-cb.html" class="button">Lists</a></li>
+                <li class="list-item"><a href="/Documentation/pages/nav-cb.html" class="button">Navigation Bar</a></li>
             </ul>
         </div>
 
-        <div class="main-content flex-column margin-right">
+        <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title margin-bottom">BUTTONS</div>
-                <pre class="align-center-item margin-bottom"><code class="">
+                <div class="main-content-title mb-2">BUTTONS</div>
+                <div class="variation-desc mb-2">Buttons are components user can click to perform an action and interact
+                    with the website. Oxygen provides 4 types of buttons namely: <code>Primary Buttons | Secondary
+                        Buttons | Buttons with Icons | Floating Buttons</code>.<br> To use these buttons in your project
+                    import the below stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
 @import url("https://oxygen-ui-component-library.netlify.app/components/button/button.css")
                 </code></pre>
             </div>
 
-            <ul class="main-comp-variations margin-bottom flex-column">
+            <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Solid Buttons</strong></div>
-                    <div class="variation-desc margin-bottom">This component is typically used to display
-                        solid buttons that are essentially used for primary actions.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="button-solid padding">
-                            <button class="margin button primary-button">Primary Button</button>
-                            <button class="margin button secondary-button">Secondary Button</button>
-                            <button class="margin button danger-button">Danger Button</button>
+                    <div class="variation-title black-text mb-2 mt-2"><strong>Solid Buttons</strong></div>
+                    <div class="variation-desc mb-2">Use
+                        the base class <code>button</code> to generate a simple button. Oxygen provides 3 types of
+                        solid buttons namely: primary, secondary and a danger button.<br> Use the class
+                        <code>primary-button | secondary-button | danger-button</code> to use the appropriate button.
+                    </div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="button-solid-container">
+                            <button class="m-1 button primary-button">Primary Button</button>
+                            <button class="m-1 button secondary-button">Secondary Button</button>
+                            <button class="m-1 button danger-button">Danger Button</button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="button-solid">
-    &ltbutton class="margin button primary-button">Primary Button&lt/button>
-    &ltbutton class="margin button secondary-button">Secondary Button&lt/button>
-    &ltbutton class="margin button danger-button">Danger Button&lt/button>
-&lt/div>  
-                        </code></pre>            
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="button-solid-container">
+    &ltbutton class="m-1 button primary-button">Primary Button&lt/button>
+    &ltbutton class="m-1 button secondary-button">Secondary Button&lt/button>
+    &ltbutton class="m-1 button danger-button">Danger Button&lt/button>
+&lt/div> 
+                        </code></pre>
                     </div>
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Outlined Buttons</strong></div>
-                    <div class="variation-desc margin-bottom">This component is used to display
-                        outlined buttons that can be used as secondary buttons.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="button-outlined padding">
-                            <button class="margin button primary-button-outlined">Primary Button</button>
-                            <button class="margin button secondary-button-outlined">Secondary Button</button>
-                            <button class="margin button danger-button-outlined">Danger Button</button>
+                    <div class="variation-title mt-2 mb-2"><strong>Outlined Buttons</strong></div>
+                    <div class="variation-desc mb-2">Use
+                        the base class <code>button</code> to generate a simple button. Oxygen provides 3 types of
+                        solid buttons namely: primary, secondary and a danger button. <br> Use the class
+                        <code>primary-button-outlined | secondary-button-outlined | danger-button-outlined</code> to use
+                        the appropriate button. </div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="button-outlined-container">
+                            <button class="m-1 button primary-button-outlined">Primary Button</button>
+                            <button class="m-1 button secondary-button-outlined">Secondary Button</button>
+                            <button class="m-1 button danger-button-outlined">Danger Button</button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="button-outlined">
-    &ltbutton class="margin button primary-button-outlined">Primary Button&lt/button>
-    &ltbutton class="margin button secondary-button-outlined">Secondary Button&lt/button>
-    &ltbutton class="margin button danger-button-outlined">Danger Button&lt/button>
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="button-outlined-container">
+    &ltbutton class="m-1 button primary-button-outlined">Primary Button&lt/button>
+    &ltbutton class="m-1 button secondary-button-outlined">Secondary Button&lt/button>
+    &ltbutton class="m-1 button danger-button-outlined">Danger Button&lt/button>
 &lt/div>
                         </code></pre>
                     </div>
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Button with Icons</strong></div>
-                    <div class="variation-desc margin-bottom">This component is used to display buttons that have icons.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="button-icon flex-row padding">
-                            <button class="margin button primary-button flex-row flex-align">
-                                <img class="icon" src="/Components/button/cart-white.svg" alt="icon">
+                    <div class="variation-title mb-2 mt-2"><strong>Button with Icons</strong></div>
+                    <div class="variation-desc mb-2">Use
+                        the base class <code>button</code> to generate a simple button.</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="button-icon-container flex-row">
+                            <button class="m-1 button primary-button flex-row">
+                                <i class="mr-1 fas fa-shopping-cart"></i>
                                 <span>Add to Cart</span>
                             </button>
-                            <button class="margin button danger-button flex-row flex-align">
-                                <img class="icon" src="/Components/button/delete_white.svg" alt="icon">
+                            <button class="m-1 button danger-button flex-row">
+                                <i class="mr-1 fas fa-trash"></i>
                                 <span>Delete</span>
                             </button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="button-icon flex-row">
-    &ltbutton class="margin button primary-button flex-row flex-align">
-        &ltimg class="icon" src="cart-white.svg" alt="icon">
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="button-icon-container flex-row">
+    &ltbutton class="m-1 button primary-button flex-row">
+        &lti class="mr-1 fas fa-shopping-cart">&lt/i>
         &ltspan>Add to Cart&lt/span>
     &lt/button>
-    &ltbutton class="margin button danger-button flex-row flex-align">
-        &ltimg class="icon" src="delete_white.svg" alt="icon">
+    &ltbutton class="m-1 button danger-button flex-row">
+        &lti class="mr-1 fas fa-trash">&lt/i>
         &ltspan>Delete&lt/span>
     &lt/button>
 &lt/div>
@@ -127,30 +141,32 @@
                 </li>
 
                 <li class="comp-variations flex-column">
-                    <div class="variation-title"><strong>Floating Buttons</strong></div>
-                    <div class="variation-desc margin-bottom">This component is used to display floating buttons.</div>
-                    <div class="variation-component align-center-item">
-                        <div class="button-float padding">
-                            <button class="margin float-button primary-button">
-                                <img src="/Components/button/add_white.svg" alt="Icon">
+                    <div class="variation-title mt-2 mb-2"><strong>Floating Buttons</strong></div>
+                    <div class="variation-desc mb-2">Floating action buttons are used to perform primary or common
+                        actions on the screen. Circular in shape, they remain fixed on the bottom right corner of the
+                        screen and float on top of all content.<br> Use the class <code>float-button</code> to use it.</div>
+                    <div class="variation-component align-self-center mb-2">
+                        <div class="button-float-container">
+                            <button class="m-1 float-button primary-button">
+                                <i class="fas fa-plus"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-center-item">
-                        <pre class="margin-bottom"><code class="language-html">
-&ltdiv class="button-float">
-    &ltbutton class="margin float-button primary-button">
-        &ltimg src="add_white.svg" alt="Icon">
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="button-float-container">
+    &ltbutton class="m-1 float-button primary-button">
+        &lti class="fas fa-plus">&lt/i>
     &lt/button>
-&lt/div>              
+&lt/div>             
                         </code></pre>
                     </div>
                 </li>
             </ul>
 
-            <footer class="footer-buttons flex-row margin-bottom">
-                <a class="button secondary-button-outlined" href="/Documentation/pages/alert-cb.html">
-                    << Alert</a> <a class="button secondary-button-outlined" href="/Documentation/pages/card-cb.html">Card >>
+            <footer class="footer-buttons flex-row mb-2 justify-content-between">
+                <a class="button gray-text" href="/Documentation/pages/alert-cb.html">
+                    << Alert</a> <a class="button gray-text" href="/Documentation/pages/card-cb.html">Card >>
                 </a>
             </footer>
         </div>

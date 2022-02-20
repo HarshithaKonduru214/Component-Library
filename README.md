@@ -164,6 +164,84 @@
 </a>
 </p>
 
+<h2>
+    Grids
+</h2>
+
+<p>
+    The grid component offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. Oxygen provides 2 variations:
+	<ul>
+		<li>2 Column Grid Layout</li>
+		<li>3 Column Grid Layout</li>
+	</ul>
+	Link:
+	<a href="https://oxygen-ui-component-library.netlify.app/documentation/pages/avatar-cb">
+	https://oxygen-ui-component-library.netlify.app/documentation/pages/grid-cb
+</a>
+</p>
+
+<h2>
+    Modals
+</h2>
+
+<p>
+    Modals focus the user’s attention exclusively on one task or piece of information via a window that sits on top of the page content. Oxygen provides 1 variation:
+	<ul>
+		<li>Simple Modal</li>
+	</ul>
+	Link:
+	<a href="https://oxygen-ui-component-library.netlify.app/documentation/pages/avatar-cb">
+	https://oxygen-ui-component-library.netlify.app/documentation/pages/modal-cb
+</a>
+</p>
+
+<h2>
+    Rating
+</h2>
+
+<p>
+    Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own. Oxygen provides 1 variation:
+	<ul>
+		<li>Simple Rating</li>
+	</ul>
+	Link:
+	<a href="https://oxygen-ui-component-library.netlify.app/documentation/pages/avatar-cb">
+	https://oxygen-ui-component-library.netlify.app/documentation/pages/rating-cb
+</a>
+</p>
+
+<h2>
+    Toast
+</h2>
+
+<p>
+    This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is used to show messages that need user action. Oxygen provides 1 variation:
+	<ul>
+		<li>Simple Toast</li>
+	</ul>
+	Link:
+	<a href="https://oxygen-ui-component-library.netlify.app/documentation/pages/avatar-cb">
+	https://oxygen-ui-component-library.netlify.app/documentation/pages/toast-cb
+</a>
+</p>
+
+<h2>
+    Slider
+</h2>
+
+<p>
+    Sliders are used to decide range for something like sound in videos, price in shopping sites, etc. Oxygen provides 1 variation:
+	<ul>
+		<li>Slider</li>
+	</ul>
+	Link:
+	<a href="https://oxygen-ui-component-library.netlify.app/documentation/pages/avatar-cb">
+	https://oxygen-ui-component-library.netlify.app/documentation/pages/slider-cb
+</a>
+</p>
+
+
+
 
 
 

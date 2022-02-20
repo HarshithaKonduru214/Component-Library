@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette</title>
+    <title>Component Listing</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 
+</head>
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
-		<a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
-		<div class="nav-buttons flex-row">
-			<a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-github"></i></a>
-			<a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i class="fab fa-linkedin-in"></i></a>
-		</div>
-	</nav>
+        <a href="/index.html" class="nav-title align-self-center">OXYGEN UI</a>
+        <div class="nav-buttons flex-row">
+            <a href="https://github.com/HarshithaKonduru214" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://twitter.com/HarshitaKonduru" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/harshita-k/" target="__blank" class="nav-icon m-2 black-text"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+    </nav>
 
     <div class="main-container flex-row">
         <div class="sidebar flex-column ml-2">
@@ -50,65 +54,63 @@
 
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title mb-2">Color Scheme</div>
-                <div class="variation-desc gray-text mb-2">Oxygen comes with a pre-defined default color palette that remains consistent throughout the design. These colors can be changed according to your preference.</div>
+                <div class="main-content-title mb-2">TOAST</div>
+                <div class="variation-desc mb-2">This component can be used for toast or snackbar component. Toast is
+                    mostly used to show feedback message. Snackbar is to used show message that need user action<br>To
+                    use this toast component
+                    in your project
+                    import the below stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
+@import url("https://oxygen-ui-component-library.netlify.app/components/toast/toast.css")
+                </code></pre>
             </div>
-
-            <br>
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title black-text mb-2"><strong>Default Color Palette</strong></div>
-                    <div class="variation-component">
-                        <div class="color-palette flex-row mb-2">
-                            <div class="primary flex-column">
-                                <div class="primary-color block justify-self-center">#6ee7b7</div>
-                                <div class="label align-self-center">Primary Color</div>
+                    <div class="variation-title mb-2 mt-2"><strong>Simple Toast</strong></div>
+                    <div class="variation-desc mb-2">This component consists of a description and a close icon.
+                    </div>
+                    <div class="variation-component mb-2">
+                        <div class="toast flex-row justify-content-between">
+                            <div class="descr">
+                                <p>Can't send photo. Retry in 5 seconds.</p>
                             </div>
-                            <div class="secondary flex-column">
-                                <div class="secondary-color block justify-self-center">#BBB5BD</div>
-                                <div class="label align-self-center">Secondary Color</div>
+                            <div class="toast-buttons">
+                                <button><i class="toast-close close-icon fas fa-times"></i></button>
                             </div>
-                            <div class="default flex-column">
-                                <div class="default-color block justify-self-center">#000000</div>
-                                <div class="label align-self-center">Default Text Color</div>
-                            </div>
-                            <div class="gray flex-column">
-                                <div class="gray-color block justify-self-center">#808080</div>
-                                <div class="label align-self-center">Gray Text Color</div>
-                            </div>
-                            <div class="success-cont flex-column">
-                                <div class="success-color block justify-self-center">#4ade80</div>
-                                <div class="label align-self-center">Success Color</div>
-                            </div>
-                            <div class="error-cont flex-column">
-                                <div class="error-color block justify-self-center">#dc2626</div>
-                                <div class="label align-self-center">Error Color</div>
-                            </div>
-                            <div class="warning-cont flex-column">
-                                <div class="warning-color block justify-self-center">##fb923c</div>
-                                <div class="label align-self-center">Warning Color</div>
-                            </div>    
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center">
-          
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="toast flex-row justify-content-between">
+    &ltdiv class="descr">
+        &ltp>Can't send photo. Retry in 5 seconds.&lt/p>
+    &lt/div>
+    &ltdiv class="toast-buttons">
+        &ltbutton>&lti class="toast-close close-icon fas fa-times">&lt/i>&lt/button>
+    &lt/div>
+&lt/div>                  
+                        </code></pre>
                     </div>
                 </li>
             </ul>
-
             <footer class="footer-buttons flex-row mb-2 justify-content-between">
-                <a class="button gray-text" href="/Documentation/pages/installation.html">
-                    << Introduction</a> <a class="button gray-text" href="/Documentation/pages/text-cb.html">Typography >>
+                <a class="button gray-text" href="/Documentation/pages/rating-cb.html">
+                    << Rating</a> <a class="button gray-text" href="/Documentation/pages/slider-cb.html">
+Slider >>
                 </a>
             </footer>
         </div>
+
+
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
     </script>
+
 </body>
 
 </html>

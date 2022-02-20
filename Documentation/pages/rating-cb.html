@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>Component Listing</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 
+</head>
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
@@ -53,52 +54,75 @@
 
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title mb-2">INTRODUCTION</div>
-                <div class="variation-desc gray-text mb-2">OXYGEN UI is a highly customizable, low-level utility first CSS
-                    component library that gives you all of the building blocks you need to build bespoke designs without any
-                    annoying opinionated styles you have to fight to override. It operates on a lower level
-                    and offers you a set of CSS helper classes. By using these classes you can rapidly create custom
-                    design easily.</div>
-                </div>
-
-            <br>
+                <div class="main-content-title mb-2">RATING</div>
+                <div class="variation-desc mb-2">Ratings provide insight regarding others' opinions and experiences, and
+                    can allow the user to submit a rating of their own.<br>To use this rating component
+                    in your project
+                    import the below stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
+@import url("https://oxygen-ui-component-library.netlify.app/components/rating/rating.css")
+                </code></pre>
+            </div>
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title mb-2"><strong>Installation</strong></div>
-                    <div class="variation-component mb-2">
-                        <div class="variation-desc">
-                            To start using the components of Oxygen UI you can import the below stylesheet in your
-                            project.
+                    <div class="variation-title mb-2 mt-2"><strong>Simple Star Rating</strong></div>
+                    <div class="variation-desc mb-2">This component consists of a full, half and a empty star that can
+                        be rendered according to user's rating on a particular product.
+                    </div>
+                    <div class="variation-component mb-2 align-self-center">
+                        <div class="card-rating-container flex-row p-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="card-rating-container flex-row p-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center mb-2 container">
-                        <pre class="align-self-center mb-2"><code class="">
-@import url("https://oxygen-ui-component-library.netlify.app/style.css")
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="card-rating-container flex-row p-2">
+    &lti class="fas fa-star">&lt/i>
+    &lti class="fas fa-star">&lt/i>
+    &lti class="fas fa-star">&lt/i>
+    &lti class="fas fa-star">&lt/i>
+    &lti class="fas fa-star-half-alt">&lt/i>
+&lt/div>
+&ltdiv class="card-rating-container flex-row p-2">
+    &lti class="fas fa-star">&lt/i>
+    &lti class="fas fa-star">&lt/i>
+    &lti class="fas fa-star-half-alt">&lt/i>
+    &lti class="far fa-star">&lt/i>
+    &lti class="far fa-star">&lt/i>
+&lt/div>                    
                         </code></pre>
-                    </div>
-                    <div class="variation-component">
-                        <div class="variation-desc">
-                            NOTE: If you do not require all the components, you can also import individual component
-                            stylesheets. The links to the individual component stylesheets can be found in their
-                            respective documentations.
-                        </div>
                     </div>
                 </li>
             </ul>
-
             <footer class="footer-buttons flex-row mb-2 justify-content-between">
-                <a class="button gray-text" href="/index.html">
-                    << Home</a> <a class="button gray-text" href="/Documentation/pages/colors-cb.html">Colors >>
+                <a class="button gray-text" href="/Documentation/pages/modal-cb.html">
+                    << Modal</a> <a class="button gray-text" href="/Documentation/pages/toast-cb.html">
+                        Toast >>
                 </a>
             </footer>
         </div>
+
+
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
     </script>
+
 </body>
 
 </html>

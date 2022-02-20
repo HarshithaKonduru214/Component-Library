@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation</title>
+    <title>Component Listing</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 
+</head>
 
 <body>
     <nav class="navbar mb-2 pt-2 flex-row box-shadow justify-content-between">
@@ -53,52 +54,55 @@
 
         <div class="main-content flex-column mr-2">
             <div class="main-comp-title flex-column">
-                <div class="main-content-title mb-2">INTRODUCTION</div>
-                <div class="variation-desc gray-text mb-2">OXYGEN UI is a highly customizable, low-level utility first CSS
-                    component library that gives you all of the building blocks you need to build bespoke designs without any
-                    annoying opinionated styles you have to fight to override. It operates on a lower level
-                    and offers you a set of CSS helper classes. By using these classes you can rapidly create custom
-                    design easily.</div>
-                </div>
-
-            <br>
+                <div class="main-content-title mb-2">SLIDER</div>
+                <div class="variation-desc mb-2">Sliders are used to decide range for something like sound in videos,
+                    price in shopping sites, etc.<br>To use this slider component
+                    in your project
+                    import the below stylesheet.</div>
+                <pre class="align-self-center mb-2"><code class="">
+@import url("https://oxygen-ui-component-library.netlify.app/components/slider/slider.css")
+                </code></pre>
+            </div>
 
             <ul class="main-comp-variations mb-2 flex-column">
                 <li class="comp-variations flex-column">
-                    <div class="variation-title mb-2"><strong>Installation</strong></div>
-                    <div class="variation-component mb-2">
-                        <div class="variation-desc">
-                            To start using the components of Oxygen UI you can import the below stylesheet in your
-                            project.
+                    <div class="variation-title mb-2 mt-2"><strong>Simple Slider</strong></div>
+                    <div class="variation-desc mb-2">This component can be used to select a value in a given range. This
+                        range can be altered according to user's choice.
+                    </div>
+                    <div class="variation-component mb-2 align-self-center">
+                        <div class="sidebar-rating mb-2 p-2">
+                            <div class="sidebar-heading pb-2">Rating</div>
+                            <input type="range" name="rating" id="rating" min="0" max="5">
                         </div>
                     </div>
-                    <div class="variation-comp-code align-self-center mb-2 container">
-                        <pre class="align-self-center mb-2"><code class="">
-@import url("https://oxygen-ui-component-library.netlify.app/style.css")
+                    <div class="variation-comp-code align-self-center container mb-2">
+                        <pre class="mb-2"><code class="language-html">
+&ltdiv class="sidebar-rating mb-2 p-2">
+    &ltdiv class="sidebar-heading pb-2">Rating&lt/div>
+    &ltinput type="range" name="rating" id="rating" min="0" max="5">
+&lt/div>                   
                         </code></pre>
-                    </div>
-                    <div class="variation-component">
-                        <div class="variation-desc">
-                            NOTE: If you do not require all the components, you can also import individual component
-                            stylesheets. The links to the individual component stylesheets can be found in their
-                            respective documentations.
-                        </div>
                     </div>
                 </li>
             </ul>
-
             <footer class="footer-buttons flex-row mb-2 justify-content-between">
-                <a class="button gray-text" href="/index.html">
-                    << Home</a> <a class="button gray-text" href="/Documentation/pages/colors-cb.html">Colors >>
+                <a class="button gray-text" href="/Documentation/pages/toast-cb.html">
+                    << Toast</a> <a class="button gray-text" href="/Documentation/pages/toast-cb.html">
+                        
                 </a>
             </footer>
         </div>
+
+
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
     </script>
+
 </body>
 
 </html>

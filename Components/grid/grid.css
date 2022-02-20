@@ -1,0 +1,34 @@
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cell1 cell2";
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "cell1 cell2 cell3";
+    margin: 1rem;
+    gap: 1rem;
+
+}
+
+.cell-1 {
+    grid-area: cell1;
+    background-color: var(--primary-color);
+    min-height: 5rem;
+}
+
+.cell-2 {
+    grid-area: cell2;
+    background-color: var(--secondary-color);
+    min-height: 5rem;
+}
+
+.cell-3 {
+    grid-area: cell3;
+    background-color: var(--status-offline);
+    min-height: 5rem;
+}

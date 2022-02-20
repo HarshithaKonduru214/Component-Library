@@ -1,3 +1,7 @@
 .card-rating-container {
     color: var(--primary-color)
 }
+
+.gap {
+    gap: 0.5rem;
+}

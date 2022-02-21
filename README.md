@@ -21,7 +21,7 @@
 <p>
 	If you do not require all the components, you can also import individual component stylesheets. The links to the individual component stylesheets can be found below. Oxygen provides the following components:
 	<ul>
-		<li><a>Avatars</a></li>
+		<li>Avatars</li>
 		<li>Badges</li>
 		<li>Alerts</li>
 		<li>Buttons</li>
@@ -30,6 +30,11 @@
 		<li>Images</li>
 		<li>Lists</li>
 		<li>Navigation Bars</li>
+		<li>Grids</li>
+		<li>Modal</li>
+		<li>Rating</li>
+		<li>Slider</li>
+		<li>Toast</li>
 	</ul>
 </p>
 
